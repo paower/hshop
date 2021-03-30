@@ -1,0 +1,169 @@
+{extend name="public:base" /}
+{block name="content"}
+<div class="page-header">
+	<h1>
+		{$breadcrumb1}
+		<small>
+			<i class="ace-icon fa fa-angle-double-right"></i>
+			{$breadcrumb2}
+		</small>
+	</h1>
+</div>
+<div class="row">
+	<div class="col-xs-12">
+		<div class="form-horizontal">
+
+			<legend>奖励参数 </legend>
+			<!-- <div class="form-group"> -->
+				<!-- <label class="col-sm-2 control-label no-padding-left">升级所需积分 </label> -->
+				<!-- <div class="col-sm-10"> -->
+					<!-- <div class="clearfix"> -->
+						<!-- <input class="col-xs-10 col-sm-10 form-control" name="upgrade_price" type="text" value="{$upgrade_price}"> -->
+					<!-- </div> -->
+				<!-- </div> -->
+			<!-- </div> -->
+
+			<div class="form-group">
+				<label class="col-sm-2 control-label no-padding-left">升级零售奖(%) </label>
+				<div class="col-sm-10">
+					<div class="clearfix">
+						<input class="col-xs-10 col-sm-10 form-control" name="upgrade_retail" type="text" value="{$upgrade_retail}">
+					</div>
+				</div>
+			</div>
+
+			<div class="form-group">
+				<label class="col-sm-2 control-label no-padding-left">升级批发奖(%) </label>
+				<div class="col-sm-10">
+					<div class="clearfix">
+						<input class="col-xs-10 col-sm-10 form-control" name="upgrade_wholesale" type="text" value="{$upgrade_wholesale}">
+					</div>
+				</div>
+			</div>
+
+			<div class="form-group">
+				<label class="col-sm-2 control-label no-padding-left">给会员升级分销商折扣(折) </label>
+				<div class="col-sm-10">
+					<div class="clearfix">
+						<input class="col-xs-10 col-sm-10 form-control" name="fenxiao_discount" type="text" value="{$fenxiao_discount}">
+					</div>
+				</div>
+			</div>
+
+			<div class="form-group">
+				<label class="col-sm-2 control-label no-padding-left">分销价区零售奖(%) </label>
+				<div class="col-sm-10">
+					<div class="clearfix">
+						<input class="col-xs-10 col-sm-10 form-control" name="pingjia_retail" type="text" value="{$pingjia_retail}">
+					</div>
+				</div>
+			</div>
+			<div class="form-group">
+				<label class="col-sm-2 control-label no-padding-left">分销价区批发奖(%) </label>
+				<div class="col-sm-10">
+					<div class="clearfix">
+						<input class="col-xs-10 col-sm-10 form-control" name="pingjia_wholesale" type="text" value="{$pingjia_wholesale}">
+					</div>
+				</div>
+			</div>
+			<div class="form-group">
+				<label class="col-sm-2 control-label no-padding-left">团购区零售奖(%)</label>
+				<div class="col-sm-10">
+					<div class="clearfix">
+						<input class="col-xs-10 col-sm-10 form-control" name="tuan_retail" type="number" value="{$tuan_retail}">
+					</div>
+				</div>
+			</div>
+			<div class="form-group">
+				<label class="col-sm-2 control-label no-padding-left">团购区批发奖(%)</label>
+				<div class="col-sm-10">
+					<div class="clearfix">
+						<input class="col-xs-10 col-sm-10 form-control" name="tuan_wholesale" type="number" value="{$tuan_wholesale}">
+					</div>
+				</div>
+			</div>
+			<div class="form-group">
+				<label class="col-sm-2 control-label no-padding-left">0元抢购零售奖(%)</label>
+				<div class="col-sm-10">
+					<div class="clearfix">
+						<input class="col-xs-10 col-sm-10 form-control" name="qiang_retail" type="number" value="{$qiang_retail}">
+					</div>
+				</div>
+			</div>
+			<div class="form-group">
+				<label class="col-sm-2 control-label no-padding-left">0元抢购批发奖(%)</label>
+				<div class="col-sm-10">
+					<div class="clearfix">
+						<input class="col-xs-10 col-sm-10 form-control" name="qiang_wholesale" type="number" value="{$qiang_wholesale}">
+					</div>
+				</div>
+			</div>
+			<div class="form-group">
+				<label class="col-sm-2 control-label no-padding-left">收益手续费(%)</label>
+				<div class="col-sm-10">
+					<div class="clearfix">
+						<input class="col-xs-10 col-sm-10 form-control" name="shouyi_cost" type="number" value="{$shouyi_cost}">
+					</div>
+				</div>
+			</div>
+			<div class="form-group">
+				<label class="col-sm-2 control-label no-padding-left">最低提现</label>
+				<div class="col-sm-10">
+					<div class="clearfix">
+						<input class="col-xs-10 col-sm-10 form-control" name="tixian_min" type="number" value="{$tixian_min}">
+					</div>
+				</div>
+			</div>
+			<div class="form-group">
+				<label class="col-sm-2 control-label no-padding-left">合伙股东名下总销量收益(%)</label>
+				<div class="col-sm-10">
+					<div class="clearfix">
+						<input class="col-xs-10 col-sm-10 form-control" name="jiamengshang" type="number" value="{$jiamengshang}">
+					</div>
+				</div>
+			</div>
+			<div class="form-group">
+				<label class="col-sm-2 control-label no-padding-left">区代理名下总销量收益(%) </label>
+				<div class="col-sm-10">
+					<div class="clearfix">
+						<input class="col-xs-10 col-sm-10 form-control" name="qudaili" type="number" value="{$qudaili}">
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="form-group">
+			<label class="col-sm-1 control-label no-padding-left"> </label>
+			<div class="col-sm-11">
+				<button form="form" type="submit" id="send" class="btn btn-sm btn-primary">提交</button>
+			</div>
+		</div>
+	</div>
+</div>
+{/block}
+{block name="javascript"}
+<script>
+	$(function() {
+		Oscshop.setValue("storage_user_action", '{$Think.config.storage_user_action}');
+		Oscshop.setValue("member_login_type", '{$Think.config.member_login_type}');
+		Oscshop.setValue("reg_check", '{$Think.config.reg_check}');
+	});
+	$('#send').click(function() {
+		$.post(
+			"{:url('Settings/savejl')}",
+			$(
+				'input[type=\'text\'],input[type=\'number\'],input[type=\'hidden\'],input[type=\'radio\']:checked,textarea,select'
+			),
+			function(d) {
+				art.dialog({
+					content: d.success,
+					lock: true,
+					ok: function() {
+						reloadPage(window);
+						return false;
+					}
+				});
+			}
+		);
+	});
+</script>
+{/block}

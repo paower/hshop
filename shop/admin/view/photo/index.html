@@ -1,0 +1,196 @@
+{extend name="public:base" /}
+
+{block name="content"}
+<div class="page-header">
+	<h1>	
+		{$breadcrumb1}
+		<small>
+			<i class="ace-icon fa fa-angle-double-right"></i>
+			{$breadcrumb2}
+		</small>
+	</h1>
+</div>	
+	
+	
+<div class="row">
+	<div class="col-xs-12">	
+		<div class="table-responsive">
+			<table class="table table-striped table-bordered table-hover">
+				<thead>
+					<tr>											
+						<th>属性</th>
+						<th>图片</th> 
+						<th>修改</th> 						
+						<th>操作</th>									
+					</tr>
+				</thead>
+				<tbody>
+						
+						<tr>							
+							<td>爆款商品</td>
+							<td>
+                                <img src="{$popular_shop}" alt="" style="width: 180px;height:90px">
+                            </td>
+							<td>
+                                <form>
+                                    <input type="hidden" value="popular_shop">
+                                    <input type="file" value="" name="pic" id="popular_shop">
+                                </form>
+                            </td>							
+							<td>
+                                <a class="btn btn-xs btn-info" href="javascript:" onclick="confirm('popular_shop')">
+                                    确认
+                                </a>
+                            </td>							
+                        </tr>
+                        <tr>							
+                            <td>最新商品</td>
+                            <td>
+                                <img src="{$new_shop}" alt="" style="width: 180px;height:90px">
+                            </td>
+                            <td>
+                                <form>
+                                    <input type="hidden" value="new_shop">
+                                    <input type="file" value="" name="pic" id="new_shop">
+                                </form>
+                            </td>							
+                            <td>
+                                <a class="btn btn-xs btn-info" href="javascript:" onclick="confirm('new_shop')">
+                                    确认
+                                </a>
+                            </td>							
+                        </tr>
+                        <tr>							
+                            <td>特色推荐</td>
+                            <td>
+                                <img src="{$guesslike_shop}" alt="" style="width: 180px;height:90px">
+                            </td>
+                            <td>
+                                <form id="form">
+                                    <input type="hidden" value="guesslike_shop">
+                                    <input type="file" value="" name="pic" id="guesslike_shop">
+                                </form>
+                            </td>							
+                            <td>
+                                <a class="btn btn-xs btn-info" href="javascript:" onclick="confirm('guesslike_shop')">
+                                    确认
+                                </a>
+                            </td>							
+                        </tr>
+                        <tr>							
+							<td>分销特区</td>
+							<td>
+                                <img src="{$fenxiao_pic}" alt="" style="width: 180px;height:90px">
+                            </td>
+							<td>
+                                <form>
+                                    <input type="hidden" value="fenxiao_pic">
+                                    <input type="file" value="" name="pic" id="fenxiao_pic">
+                                </form>
+                            </td>							
+							<td>
+                                <a class="btn btn-xs btn-info" href="javascript:" onclick="confirm('fenxiao_pic')">
+                                    确认
+                                </a>
+                            </td>							
+                        </tr>
+                        <tr>							
+							<td>0元抢购</td>
+							<td>
+                                <img src="{$qianggou_pic}" alt="" style="width: 180px;height:90px">
+                            </td>
+							<td>
+                                <form>
+                                    <input type="hidden" value="qianggou_pic">
+                                    <input type="file" value="" name="pic" id="qianggou_pic">
+                                </form>
+                            </td>							
+							<td>
+                                <a class="btn btn-xs btn-info" href="javascript:" onclick="confirm('qianggou_pic')">
+                                    确认
+                                </a>
+                            </td>							
+                        </tr>
+                        <tr>							
+							<td>1元礼品</td>
+							<td>
+                                <img src="{$yiyuan_pic}" alt="" style="width: 180px;height:90px">
+                            </td>
+							<td>
+                                <form>
+                                    <input type="hidden" value="yiyuan_pic">
+                                    <input type="file" value="" name="pic" id="yiyuan_pic">
+                                </form>
+                            </td>							
+							<td>
+                                <a class="btn btn-xs btn-info" href="javascript:" onclick="confirm('yiyuan_pic')">
+                                    确认
+                                </a>
+                            </td>							
+                        </tr>
+                        <tr>							
+							<td>团购区</td>
+							<td>
+                                <img src="{$tuangou_pic}" alt="" style="width: 180px;height:90px">
+                            </td>
+							<td>
+                                <form>
+                                    <input type="hidden" value="tuangou_pic">
+                                    <input type="file" value="" name="pic" id="tuangou_pic">
+                                </form>
+                            </td>							
+							<td>
+                                <a class="btn btn-xs btn-info" href="javascript:" onclick="confirm('tuangou_pic')">
+                                    确认
+                                </a>
+                            </td>							
+                        </tr>
+                        <tr>							
+							<td>套装区</td>
+							<td>
+                                <img src="{$upgrade_pic}" alt="" style="width: 180px;height:90px">
+                            </td>
+							<td>
+                                <form>
+                                    <input type="hidden" value="upgrade_pic">
+                                    <input type="file" value="" name="pic" id="upgrade_pic">
+                                </form>
+                            </td>							
+							<td>
+                                <a class="btn btn-xs btn-info" href="javascript:" onclick="confirm('upgrade_pic')">
+                                    确认
+                                </a>
+                            </td>							
+                        </tr>
+				</tbody>
+				
+			</table>
+		</div>
+	</div>
+</div>
+<script>
+function confirm(form){
+    var formData = new FormData(); 
+    formData.append('file', $('#'+form)[0].files[0]);
+    formData.append('value',form); 
+	var url = "{:url('Photo/edit')}";
+	$.ajax({
+		url:url,
+		type:"POST",
+		data:formData,
+		dataType:"json",
+		contentType:false,
+		processData: false, 
+		success: function (mes) {
+            if(mes.status==1){
+                alert(mes.text);
+                location.reload();
+            }else{
+                alert(mes.text);
+            }
+		}
+	})
+
+}
+</script>
+{/block}

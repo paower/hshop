@@ -1,0 +1,481 @@
+{extend name="public:base" /}
+{block name="content"}	
+<div class="page-header">
+	<h1>
+		{$breadcrumb1}
+		<small>
+			<i class="ace-icon fa fa-angle-double-right"></i>
+			{$breadcrumb2}
+		</small>
+		<small>
+			<i class="ace-icon fa fa-angle-double-right"></i>
+			{$crumbs}
+		</small>			
+	<button type="submit" style="float:right;" id='send' form="form-goods"  class="btn button btn-sm btn-primary">提交</button>
+	</h1>
+</div>
+	<div class="row">
+	<div class="col-xs-12">	
+		<div class="panel-body">
+        <form action="{:url('Goods/edit_general')}" method="post" enctype="multipart/form-data" id="form-goods" class="form-horizontal">
+        
+        {if condition="$Request.param.id"}
+			<input name="goods_id" type="hidden" value="{$Request.param.id}" />
+		{/if}
+          <ul class="nav nav-tabs">
+          	
+          	<li class="active"><a href="#tab-data" data-toggle="tab">基本信息</a></li>
+			<li><a href="#tab-general" data-toggle="tab">商品描述</a></li>
+			{if condition="$goods.modelis eq 2"}
+			<li><a href="#tab-time" data-toggle="tab">抢购时间</a></li>
+			{/if}
+          </ul>
+          <div class="tab-content">
+          		
+	          	<!-- 基本信息 START -->
+	          	<div class="tab-pane active" id="tab-data">
+	          		
+	          		<div class="form-group required">
+		                <label class="col-sm-2 control-label" for="input-image">
+		                <span title="" data-toggle="tooltip" data-original-title="上传800x800的图片">缩略图：</span>
+		                </label>
+		                
+		                <div class="col-sm-10" id="thumb">
+		                  <a id="thumb-image" href="#" data-toggle="image" class="img-thumbnail">
+		                  		{if condition="!empty($goods['image'])"}
+		                  			<img src="/public/uploads/{$goods.image}" style="width:100px"/>
+			                  	{else /}
+			                  		<img src="__PUBLIC__/image/no_image_100x100.jpg" />
+			                  	{/if}
+								</a>
+		                  <input type="hidden" name="image" value="{$goods.image}" id="input-image" />
+		            </div>
+		            
+		            </div>   
+		            
+		            <div class="form-group required">
+						<label class="col-sm-2 control-label" for="input-name2">商品名称：</label>
+						<div class="col-sm-10">
+							<input id="input-name2" class="form-control" type="text" placeholder="商品名称" value="{$goods.name}" name="name">
+						</div>
+					</div>
+					<div class="form-group required">
+						<label class="col-sm-2 control-label" for="input-name2">视频链接：</label>
+						<div class="col-sm-10">
+							<input id="input-name2" class="form-control" type="text" placeholder="视频链接" value="{$goods.video}" name="video">
+						</div>
+					</div>
+		            <div class="form-group">
+						<label class="col-sm-2 control-label" for="input-length-class">所属模块：</label>
+						<div class="col-sm-10">
+							
+							<select id="modelis" class="form-control" name="modelis" >
+									<option value="1" {if condition="$goods.modelis eq 1"}selected{/if}>分销价区</option>
+									<option value="2" {if condition="$goods.modelis eq 2"}selected{/if}>0元抢购</option>
+									<option value="3" {if condition="$goods.modelis eq 3"}selected{/if}>1元礼品</option>
+									<option value="4" {if condition="$goods.modelis eq 4"}selected{/if}>团购区</option>
+									<option value="5" {if condition="$goods.modelis eq 5"}selected{/if}>升级商品</option>
+							</select>
+						</div>
+					</div>
+		            <div class="form-group required">
+						<label class="col-sm-2 control-label" for="input-meta-title2">商品型号：</label>
+						<div class="col-sm-10">
+							<input id="input-meta-title2" class="form-control" type="text" placeholder="商品型号" value="{$goods.model}" name="model">
+						</div>
+					</div>
+					
+					<div class="form-group required">
+						<label class="col-sm-2 control-label" for="input-meta-title2">库存单位：</label>
+						<div class="col-sm-10">
+							<input id="input-meta-title2" class="form-control" type="text" placeholder="库存单位" value="{$goods.sku}" name="sku">
+						</div>
+					</div>
+					
+					<div class="form-group required">
+						<label class="col-sm-2 control-label" for="input-meta-title2">生产地：</label>
+						<div class="col-sm-10">
+							<input id="input-meta-title2" class="form-control" type="text" placeholder="商品位置" value="{$goods.location}" name="location">
+						</div>
+					</div>
+					
+					<div class="form-group required">
+						<label class="col-sm-2 control-label" for="input-meta-title2">零售价格：</label>
+						<div class="col-sm-10">
+							<input id="input-meta-title2" class="form-control" type="text" placeholder="零售价格" value="{$goods.retail_price}" name="retail_price">
+						</div>
+					</div>
+					
+					<div class="form-group required">
+						<label class="col-sm-2 control-label" for="input-meta-title2" id="modelistext">
+						{if condition="$goods.modelis==2"}
+						抢购价格
+						{elseif condition="$goods.modelis==3"/}
+						礼品价格
+						{elseif condition="$goods.modelis==4"/}
+						团购价格
+						{elseif condition="$goods.modelis==5"/}
+						优惠价格
+						{else/}
+						分销价格
+						{/if}
+						：</label>
+						<div class="col-sm-10">
+							<input id="input-meta-title2" class="form-control" type="text" placeholder="价格" value="{$goods.price}" name="price">
+						</div>
+					</div>
+					
+					<div class="form-group required">
+						<label class="col-sm-2 control-label" for="input-meta-title2">商品数量：</label>
+						<div class="col-sm-10">
+							<input id="input-meta-title2" class="form-control" type="text" placeholder="商品数量" value="{$goods.quantity}" name="quantity">
+						</div>
+					</div>
+					
+					<div class="form-group required">
+						<label class="col-sm-2 control-label" for="input-meta-title2">购买可得购物券：</label>
+						<div class="col-sm-10">
+							<input id="input-meta-title2" class="form-control" type="text" placeholder="购买可得购物券" value="{$goods.points}" name="points">
+						</div>
+					</div>
+					
+					<div class="form-group required">
+						<label class="col-sm-2 control-label" for="input-meta-title2">兑换所需购物券：</label>
+						<div class="col-sm-10">
+							<input id="input-meta-title2" class="form-control" type="text" placeholder="兑换所需购物券" value="{$goods.pay_points}" name="pay_points">
+						</div>
+					</div>
+					
+					<div class="form-group required">
+						<label class="col-sm-2 control-label" for="input-meta-title2">可用邀请名单：</label>
+						<div class="col-sm-10">
+							<input id="input-meta-title2" class="form-control" type="text" placeholder="可用邀请名单" value="{$goods.pay_number}" name="pay_number">
+						</div>
+					</div>
+
+					<div class="form-group required">
+						<label class="col-sm-2 control-label" for="input-meta-title2">最小订定量：</label>
+						<div class="col-sm-10">
+							<input id="input-meta-title2" class="form-control" type="text" placeholder="最小起定量" value="{$goods.minimum}" name="minimum">
+						</div>
+					</div>
+					
+					
+
+					<div class="form-group">
+						<label class="col-sm-2 control-label" for="input-subtract">扣减库存：</label>
+						
+							<div class="col-sm-10">
+								<label class="radio-inline">
+								<input type="radio" checked="checked" value="1" name="subtract">是</label>
+								<label class="radio-inline">
+								<input type="radio" value="0" name="subtract">否</label>
+							</div>
+						
+					</div>
+		            
+		           
+					
+					<div class="form-group">
+						<label class="col-sm-2 control-label">需要配送：</label>
+						<div class="col-sm-10">
+							<label class="radio-inline">
+							<input type="radio" checked="checked" value="1" name="shipping">是</label>
+							<label class="radio-inline">
+							<input type="radio" value="0" name="shipping">否</label>
+						</div>
+					</div>
+					
+					<div class="form-group">
+						<label class="col-sm-2 control-label">是否爆款：</label>
+						<div class="col-sm-10">
+							<label class="radio-inline">
+							<input type="radio" checked="checked" value="1" name="popular">是</label>
+							<label class="radio-inline">
+							<input type="radio" value="0" name="popular">否</label>
+						</div>
+					</div>
+					<div class="form-group">
+						<label class="col-sm-2 control-label">是否推荐：</label>
+						<div class="col-sm-10">
+							<label class="radio-inline">
+							<input type="radio" checked="checked" value="1" name="is_tuijian">是</label>
+							<label class="radio-inline">
+							<input type="radio" value="0" name="is_tuijian">否</label>
+						</div>
+					</div>
+					<div class="form-group">
+						<label class="col-sm-2 control-label">可用优惠券：</label>
+						<div class="col-sm-10">
+							<label class="radio-inline">
+							<input type="radio" checked="checked" value="1" name="is_coupon">是</label>
+							<label class="radio-inline">
+							<input type="radio" value="0" name="is_coupon">否</label>
+						</div>
+					</div>
+					<div class="form-group">
+						<label class="col-sm-2 control-label">可用积分支付：</label>
+						
+							<div class="col-sm-10">
+								<label class="radio-inline">
+								<input type="radio" checked="checked" value="1" name="is_yue_goods">是</label>
+								<label class="radio-inline">
+								<input type="radio" value="0" name="is_yue_goods">否</label>
+							</div>
+						
+					</div>
+					<div class="form-group">
+						<label class="col-sm-2 control-label">可用购物券兑换：</label>
+						<div class="col-sm-10">
+							<label class="radio-inline">
+							<input type="radio" checked="checked" value="1" name="is_points_goods">是</label>
+							<label class="radio-inline">
+							<input type="radio" value="0" name="is_points_goods">否</label>
+						</div>
+					</div>
+					<div class="form-group">
+						<label class="col-sm-2 control-label">可用邀请名单：</label>
+						<div class="col-sm-10">
+							<label class="radio-inline">
+							<input type="radio" checked="checked" value="1" name="is_number_goods">是</label>
+							<label class="radio-inline">
+							<input type="radio" value="0" name="is_number_goods">否</label>
+						</div>
+					</div>
+					<div class="form-group required">
+						<label class="col-sm-2 control-label" for="input-meta-title2">重量：</label>
+						<div class="col-sm-10">
+							<input id="input-meta-title2" class="form-control" type="text" placeholder="重量" value="{$goods.weight}" name="weight">
+						</div>
+					</div>
+
+					<div class="form-group">
+						<label class="col-sm-2 control-label" for="input-length-class">重量单位：</label>
+						<div class="col-sm-10">
+							
+							<select id="input-length-class" class="form-control" name="weight_class_id">
+								{volist name="weight_class" id="v"}
+									<option {if condition="isset($goods)&&($v.weight_class_id eq $goods['weight_class_id'])"}selected="selected"{/if} value="{$v.weight_class_id}"  >{$v.title}</option>
+								{/volist}
+							</select>
+						</div>
+					</div>
+		            
+		            <div class="form-group">
+						<label class="col-sm-2 control-label" for="input-length">尺寸(L x W x H)：</label>
+						<div class="col-sm-10">
+							<div class="row">
+								<div class="col-sm-4">
+									<input id="input-length" class="form-control" type="text" placeholder="长度" value="{$goods.length|default=''}" name="length">
+								</div>
+								<div class="col-sm-4">
+									<input id="input-width" class="form-control" type="text" placeholder="宽度" value="{$goods.width|default=''}" name="width">
+								</div>
+								<div class="col-sm-4">
+									<input id="input-height" class="form-control" type="text" placeholder="高度" value="{$goods.height|default=''}" name="height">
+								</div>
+							</div>
+						</div>
+					</div>
+
+
+					<div class="form-group">
+						<label class="col-sm-2 control-label" for="input-length-class">尺寸单位：</label>
+						<div class="col-sm-10">
+							
+							<select id="input-length-class" class="form-control" name="length_class_id">
+								{volist name="length_class" id="v"}
+									<option {if condition="isset($goods)&&($v.length_class_id eq $goods['length_class_id'])"}selected="selected"{/if} value="{$v.length_class_id}">{$v.title}</option>
+								{/volist}
+							</select>
+						</div>
+					</div>
+					
+					<div class="form-group">
+						<label class="col-sm-2 control-label" for="input-length-class">运费模板：</label>
+						<div class="col-sm-10">
+							
+							<select id="input-length-class" class="form-control" name="length_class_id">
+								<option value="0" {if condition="$goods['length_class_id']==0"}selected{/if}>包邮</option>
+								{volist name="transport" id="vo"}
+									<option value="{$vo.id}" {if condition="$goods['length_class_id']==$vo['id']"}selected{/if}>{$vo.title}</option>
+								{/volist}
+							</select>
+						</div>
+					</div>
+		            
+		            <div class="form-group">
+						<label class="col-sm-2 control-label">商品状态：</label>
+						<div class="col-sm-10">
+							<label class="radio-inline">
+							<input type="radio" checked="checked" value="1" name="status">启用</label>
+							<label class="radio-inline">
+							<input type="radio" value="2" name="status">停用</label>
+						</div>
+					</div>
+		            
+		            <div class="form-group required">
+						<label class="col-sm-2 control-label" for="input-meta-title2">排序：</label>
+						<div class="col-sm-10">
+							<input id="input-meta-title2" class="form-control" type="text" placeholder="排序" value="{$goods.sort_order}" name="sort_order">
+						</div>
+					</div>
+		            
+	          	</div>
+	          	<!-- 基本信息 END -->
+	          	
+	          	<!-- 商品描述  START -->
+	          	<div class="tab-pane" id="tab-general">	          		
+					
+					<div class="form-group">
+	                    <label class="col-sm-2 control-label" for="input-description">商品简介：</label>
+	                    <div class="col-sm-10">
+	                      <textarea name="description[summary]" class="form-control" rows="5" id="summary">{$description.summary|default=''}</textarea>	
+	                    </div>
+                  	</div>
+					
+					<div class="form-group">
+	                    <label class="col-sm-2 control-label" for="input-description">商品详情：</label>
+	                    <div class="col-sm-10">
+	                      <textarea name="description[description]" id="editor1">{$description.description|default=''}</textarea>	
+	                    </div>
+                  	</div>
+		
+					
+					<!-- <div class="form-group"> -->
+						<!-- <label class="col-sm-2 control-label" for="input-meta-description2">Meta标签描述：</label> -->
+						<!-- <div class="col-sm-10"> -->
+							<!-- <textarea id="input-meta-description2" class="form-control" placeholder="Meta标签描述" rows="5" name="description[meta_description]">{$description.meta_description|default=''}</textarea> -->
+						<!-- </div> -->
+					<!-- </div> -->
+					<!-- <div class="form-group"> -->
+						<!-- <label class="col-sm-2 control-label" for="input-meta-keyword2">Meta标签关键词：</label> -->
+						<!-- <div class="col-sm-10"> -->
+							<!-- <textarea id="input-meta-keyword2" class="form-control" placeholder="Meta标签关键词" rows="5" name="description[meta_keyword]">{$description.meta_keyword|default=''}</textarea> -->
+						<!-- </div> -->
+					<!-- </div> -->
+					
+					
+					
+				  </div>
+				  <div class="tab-pane" id="tab-time">	          		
+					
+					<div class="form-group">
+						<label class="col-sm-2 control-label" for="input-description">开始时间：</label>
+						<div class="col-sm-10">
+							<div class="col-sm-4">
+								<input id="input-length" class="form-control" type="text" placeholder="开始时间" value="{$goods.qiangg_start_time|default=''}" name="qiangg_start_time">
+							</div>
+						</div>
+						</div>
+					
+					<div class="form-group">
+						<label class="col-sm-2 control-label" for="input-description">结束时间：</label>
+						<div class="col-sm-10">
+							<div class="col-sm-4">
+								<input id="input-length" class="form-control" type="text" placeholder="结束时间" value="{$goods.qiangg_end_time|default=''}" name="qiangg_end_time">
+							</div>	
+						</div>
+						</div>
+					</div>
+	          	<!-- 商品描述 END -->  
+	          	
+        
+          </div>
+        </form>
+	</div>
+	</div>
+</div>
+{/block}
+{block name="javascript"}	
+<script src="__PUBLIC__/js/ckeditor/ckeditor.js"></script> 
+<script type="text/javascript" charset="utf-8" src="/public/Ueditor/ueditor.config.js"></script>
+<script type="text/javascript" charset="utf-8" src="/public/Ueditor/ueditor.all.min.js"> </script>
+<script type="text/javascript" charset="utf-8" src="/public/Ueditor/lang/zh-cn/zh-cn.js"></script>
+<script>
+$(function(){
+	{if condition="$Request.param.id"}
+				Oscshop.setValue("status", {$goods.status|default=1});		
+				Oscshop.setValue("subtract",{$goods.subtract|default=1});		
+				Oscshop.setValue("shipping",{$goods.shipping|default=1});
+				Oscshop.setValue("popular",{$goods.popular|default=1});
+				Oscshop.setValue("is_coupon",{$goods.is_coupon|default=1});
+				Oscshop.setValue("is_number_goods",{$goods.is_number_goods|default=1});
+				Oscshop.setValue("is_points_goods",{$goods.is_points_goods|default=1});
+				Oscshop.setValue("is_yue_goods",{$goods.is_yue_goods|default=1});
+				
+				Oscshop.setValue("is_tuijian",{$goods.is_tuijian|default=1});
+	{/if}
+});	
+var ue = UE.getEditor('editor1', {
+    toolbars: [
+        [
+            'undo', //撤销
+            'bold', //加粗
+            'underline', //下划线
+            'preview', //预览
+            'horizontal', //分隔线
+            'inserttitle', //插入标题
+            'cleardoc', //清空文档
+            'fontfamily', //字体
+            'fontsize', //字号
+            'paragraph', //段落格式
+            'simpleupload', //单图上传
+            'insertimage', //多图上传
+            'attachment', //附件
+            'music', //音乐
+            'inserttable', //插入表格
+            'emotion', //表情
+            'insertvideo', //视频
+            'justifyleft', //居左对齐
+            'justifyright', //居右对齐
+            'justifycenter', //居中对
+            'justifyjustify', //两端对齐
+            'forecolor', //字体颜色
+            'fullscreen', //全屏
+            'edittip ', //编辑提示
+            'customstyle', //自定义标题
+            'template', //模板
+            'source',//源代码
+             ]
+        ]
+    ,scaleEnabled:true,initialFrameWidth: '100%',initialFrameHeight:430});
+$('#send').click(function(){
+	
+	var name=$('input[name="name"]').val();
+	// var summary = $('textarea[name="goods_description[summary]"]').val();
+	
+	if(name==''){
+		alert('商品名称必填');
+		return false;
+	}	
+	if(summary==''){
+		alert('11');
+		return false;
+	}
+	return true;
+}); 
+
+$('#modelis').change(function () {
+   var ids =  $("#modelis option:selected").val();   
+	if(ids==2){
+		$('#modelistext').text('抢购价：');
+	}else if(ids==3){
+		$('#modelistext').text('礼品价：');
+	}else if(ids==4){
+		$('#modelistext').text('团购价：');
+	}else{
+		$('#modelistext').text('分销价格：');
+	}
+})
+CKEDITOR.replace('description', {
+	filebrowserImageUploadUrl: '{:url("FileManager/ckupload")}',	
+	toolbar: [
+				[ 'Source', 'Bold', 'Italic', 'Underline', 'Strike', 'Subscript', 'Superscript', '-', 'RemoveFormat' ],
+				[ 'FontSize', 'TextColor', 'BGColor' ],
+				[ 'JustifyLeft', 'JustifyCenter', 'JustifyRight', 'JustifyBlock','Image','Format']
+			]	
+});
+
+</script>
+{/block}

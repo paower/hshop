@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+		<meta name="viewport" id="viewport" content="width=device-width,initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+		<meta name="format-detection" content="telephone=no" />
+		<link href="__PUBLIC__/css/reset.css" rel="stylesheet" type="text/css">
+		<link href="__PUBLIC__/css/index.css" rel="stylesheet" type="text/css">
+		<link href="__PUBLIC__/css/discounts.css" rel="stylesheet" type="text/css">
+		<script type="text/javascript" src="__PUBLIC__/js/jquery-1.8.3.min.js"></script>
+	</head>
+	<body>
+		<div class="near-box">
+			<!--头部开始-->
+			<div class="header">
+				<a href="javascript:;" onclick="history.go(-1)" class="left"></a>
+				分销价区
+			</div>
+			<!--头部结束-->
+			<div class="discounts-bigbox">
+				<div class="discounts-banner1"><img src="{$popular_pic}" alt=""></div>
+				{volist name="popular" id="item" key="index"}
+					<a href="{:url('Goods/details',['id'=>$item.goods_id])}">
+					<div class="discounts-box1">
+						<span class="d-box1-img1"><img src="__UPLOADS__/{$item.image}" alt=""></span>
+						<div class="discounts-box2">
+							<span class="d-box2-text1">{$item.name}</span>
+							
+							<span class="d-box2-text2">零售价：￥{$item.retail_price} </span>
+							
+							<span class="d-box2-text2">分销价：￥{$item.price}</span>
+						</div>
+					</div>
+					</a>
+				{/volist}
+			</div>
+
+		</div>
+		<script type="text/javascript" src="__PUBLIC__/js/scrolltopcontrol.js"></script>
+	</body>
+</html>

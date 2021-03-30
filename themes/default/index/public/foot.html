@@ -1,0 +1,54 @@
+{if condition="$upgrade_conditions!=1"}
+<style>
+    .kaola-bottom-box1{
+        width: 25% !important;
+    }
+</style>
+{/if}
+<div class="kaola-bottom">
+    <a href="{:url('index')}" class="kaola-bottom-box1" id="home">
+        <span class="kaola-bottom-img1"><img src="__PUBLIC__/picture/home2.png"></span>
+        <span class="kaola-bottom-text1">首页</span>
+    </a>
+    <a href="{:url('classify')}" class="kaola-bottom-box1" id="cate">
+        <span class="kaola-bottom-img1"><img src="__PUBLIC__/picture/classification.png"></span>
+        <span class="kaola-bottom-text1">分类</span>
+    </a>
+    <a href="{:url('shpcart')}" class="kaola-bottom-box1" id="cart">
+        <span class="kaola-bottom-img1"><img src="__PUBLIC__/picture/shop-cart1.png"></span>
+        <span class="kaola-bottom-text1 ">购物车</span>
+    </a>
+    {if condition="$upgrade_conditions==1"}
+        <a href="{:url('index/upgrade')}" class="kaola-bottom-box1">
+            <span class="kaola-bottom-img1"><img src="__PUBLIC__/picture/shop-cart1.png"></span>
+            <span class="kaola-bottom-text1 ">我要分销</span>
+        </a>
+    {/if}
+    <a href="{:url('pcenter')}" class="kaola-bottom-box1" id="my">
+        <span class="kaola-bottom-img1"><img src="__PUBLIC__/picture/people1.png"></span>
+        <span class="kaola-bottom-text1">我的</span>
+    </a>
+</div>
+<script type="text/javascript">
+    $(document).ready(function () {
+        var path = window.location.pathname;
+        var home = $('#home').attr('href');
+        var cate = $('#cate').attr('href');
+        var cart = $('#cart').attr('href');
+        var my = $('#my').attr('href');
+        if(path==home||path=='/'){
+            $('#home').find('img').attr('src','__PUBLIC__/picture/home.png');
+            $('#home').find('.kaola-bottom-text1').addClass('text2');
+        }else if(path==cate){
+            $('#cate').find('img').attr('src','__PUBLIC__/picture/classification1.png');
+            $('#cate').find('.kaola-bottom-text1').addClass('text2');
+        }else if(path==cart){
+            $('#cart').find('img').attr('src','__PUBLIC__/picture/shop-cart2.png');
+            $('#cart').find('.kaola-bottom-text1').addClass('text2');
+        }else if(path==my||path=='/index/index/pcenter'){
+            $('#my').find('img').attr('src','__PUBLIC__/picture/people2.png');
+            $('#my').find('.kaola-bottom-text1').addClass('text2');
+        }
+
+    });
+</script>

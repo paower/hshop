@@ -1,0 +1,1766 @@
+---------------------------------------------------------------
+[ 2019-10-30T16:10:11+08:00 ] 121.32.177.144 GET ceshi.gdbadi.com/admin/Index/index
+[运行时间：0.156000s] [吞吐率：6.41req/s] [内存消耗：3,106.51kb] [文件加载：56]
+[ info ] [ LANG ] D:\web\hshop2\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'Index',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'ceshi.gdbadi.com',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Linux; Android 9; EVR-AL00 Build/HUAWEIEVR-AL00) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/70.0.3538.64 HuaweiBrowser/10.0.1.333 Mobile Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,en-US;q=0.9',
+  'cookie' => 'PHPSESSID=v07jjctgdtgoa1i79aehk87m01',
+)
+[ info ] [ PARAM ] array (
+  '/admin/Index/index' => '',
+)
+[ info ] [ CACHE ] INIT File
+[ info ] [ SESSION ] INIT array (
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\admin\controller\Index->index[ D:\web\hshop2\shop\admin\controller\Index.php ]
+[ info ] [ VIEW ] ./shop/admin\view\index\index.html [ array (
+  0 => 'admin_menu',
+  1 => 'total_order',
+  2 => 'today_order',
+  3 => 'total_money',
+  4 => 'today_money',
+  5 => 'user_action_total',
+  6 => 'today_user_action',
+  7 => 'today_member',
+  8 => 'member_count',
+  9 => 'user_action',
+  10 => 'uc_empty',
+  11 => 'order_list',
+  12 => 'empty',
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2019-10-30T16:10:14+08:00 ] 121.32.177.144 GET ceshi.gdbadi.com/favicon.ico
+[运行时间：0.031200s] [吞吐率：32.05req/s] [内存消耗：1,372.52kb] [文件加载：33]
+[ info ] [ LANG ] D:\web\hshop2\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'favicon',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'ceshi.gdbadi.com',
+  'connection' => 'keep-alive',
+  'user-agent' => 'Mozilla/5.0 (Linux; Android 9; EVR-AL00 Build/HUAWEIEVR-AL00) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/70.0.3538.64 HuaweiBrowser/10.0.1.333 Mobile Safari/537.36',
+  'accept' => 'image/webp,image/apng,image/*,*/*;q=0.8',
+  'referer' => 'http://ceshi.gdbadi.com/admin/Index/index',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,en-US;q=0.9',
+  'cookie' => 'PHPSESSID=v07jjctgdtgoa1i79aehk87m01',
+)
+[ info ] [ PARAM ] array (
+  '/favicon_ico' => '',
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2019-10-30T16:10:16+08:00 ] 180.163.220.5 GET ceshi.gdbadi.com/
+[运行时间：0.156000s] [吞吐率：6.41req/s] [内存消耗：2,966.00kb] [文件加载：49]
+[ info ] [ LANG ] D:\web\hshop2\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => '',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'ceshi.gdbadi.com',
+  'connection' => 'keep-alive',
+  'user-agent' => 'Mozilla/5.0 (Linux; U; Android 8.1.0; zh-CN; EML-AL00 Build/HUAWEIEML-AL00) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/57.0.2987.108 baidu.sogo.uc.UCBrowser/11.9.4.974 UWS/2.13.1.48 Mobile Safari/537.36 AliApp(DingTalk/4.5.11) com.alibaba.android.rimet/10487439 Channel/227200 language/zh-CN',
+  'upgrade-insecure-requests' => '1',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ SESSION ] INIT array (
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ RUN ] app\index\controller\Index->index[ D:\web\hshop2\shop\index\controller\Index.php ]
+[ info ] [ VIEW ] ./themes/default/index/index\index.html [ array (
+  0 => 'upgrade_conditions',
+  1 => 'brand',
+  2 => 'guesslike',
+  3 => 'newlist',
+  4 => 'popular',
+  5 => 'frontend_images',
+  6 => 'ggao',
+  7 => 'pic',
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2019-10-30T16:10:17+08:00 ] 180.163.220.5 GET ceshi.gdbadi.com/
+[运行时间：0.109200s] [吞吐率：9.16req/s] [内存消耗：2,966.84kb] [文件加载：49]
+[ info ] [ LANG ] D:\web\hshop2\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => '',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'ceshi.gdbadi.com',
+  'connection' => 'keep-alive',
+  'pragma' => 'no-cache',
+  'cache-control' => 'no-cache',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Linux; U; Android 8.1.0; zh-CN; EML-AL00 Build/HUAWEIEML-AL00) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/57.0.2987.108 baidu.sogo.uc.UCBrowser/11.9.4.974 UWS/2.13.1.48 Mobile Safari/537.36 AliApp(DingTalk/4.5.11) com.alibaba.android.rimet/10487439 Channel/227200 language/zh-CN',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://baidu.com/',
+  'accept-encoding' => 'gzip, deflate',
+  'cookie' => 'PHPSESSID=3bgcpg5hk5u32jaqetarklldj4',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ SESSION ] INIT array (
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ RUN ] app\index\controller\Index->index[ D:\web\hshop2\shop\index\controller\Index.php ]
+[ info ] [ VIEW ] ./themes/default/index/index\index.html [ array (
+  0 => 'upgrade_conditions',
+  1 => 'brand',
+  2 => 'guesslike',
+  3 => 'newlist',
+  4 => 'popular',
+  5 => 'frontend_images',
+  6 => 'ggao',
+  7 => 'pic',
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2019-10-30T16:10:18+08:00 ] 121.32.177.144 GET ceshi.gdbadi.com/member/member_backend/index
+[运行时间：0.093600s] [吞吐率：10.68req/s] [内存消耗：2,996.87kb] [文件加载：56]
+[ info ] [ LANG ] D:\web\hshop2\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'member',
+    1 => 'member_backend',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'ceshi.gdbadi.com',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Linux; Android 9; EVR-AL00 Build/HUAWEIEVR-AL00) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/70.0.3538.64 HuaweiBrowser/10.0.1.333 Mobile Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://ceshi.gdbadi.com/admin/Index/index',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,en-US;q=0.9',
+  'cookie' => 'PHPSESSID=v07jjctgdtgoa1i79aehk87m01',
+)
+[ info ] [ PARAM ] array (
+  '/member/member_backend/index' => '',
+)
+[ info ] [ CACHE ] INIT File
+[ info ] [ SESSION ] INIT array (
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\member\controller\MemberBackend->index[ D:\web\hshop2\shop\member\controller\MemberBackend.php ]
+[ info ] [ VIEW ] ./themes/default/member/member_backend\index.html [ array (
+  0 => 'admin_menu',
+  1 => 'breadcrumb1',
+  2 => 'breadcrumb2',
+  3 => 'ordinary',
+  4 => 'distribution',
+  5 => 'district_agent',
+  6 => 'join_in',
+  7 => 'vip_grade',
+  8 => 'list',
+  9 => 'items',
+  10 => 'empty',
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2019-10-30T16:10:33+08:00 ] 121.32.177.144 GET ceshi.gdbadi.com/member/MemberBackend/adminlogin/id/122
+[运行时间：0.062400s] [吞吐率：16.03req/s] [内存消耗：3,091.92kb] [文件加载：54]
+[ info ] [ LANG ] D:\web\hshop2\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'member',
+    1 => 'MemberBackend',
+    2 => 'adminlogin',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'ceshi.gdbadi.com',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Linux; Android 9; EVR-AL00 Build/HUAWEIEVR-AL00) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/70.0.3538.64 HuaweiBrowser/10.0.1.333 Mobile Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://ceshi.gdbadi.com/member/member_backend/index',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,en-US;q=0.9',
+  'cookie' => 'PHPSESSID=v07jjctgdtgoa1i79aehk87m01',
+)
+[ info ] [ PARAM ] array (
+  '/member/MemberBackend/adminlogin/id/122' => '',
+  'id' => '122',
+)
+[ info ] [ CACHE ] INIT File
+[ info ] [ SESSION ] INIT array (
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\member\controller\MemberBackend->adminlogin[ D:\web\hshop2\shop\member\controller\MemberBackend.php ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2019-10-30T16:10:33+08:00 ] 121.32.177.144 GET ceshi.gdbadi.com/index/Index/pcenter
+[运行时间：0.078000s] [吞吐率：12.82req/s] [内存消耗：2,977.28kb] [文件加载：51]
+[ info ] [ LANG ] D:\web\hshop2\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'Index',
+    2 => 'pcenter',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'ceshi.gdbadi.com',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Linux; Android 9; EVR-AL00 Build/HUAWEIEVR-AL00) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/70.0.3538.64 HuaweiBrowser/10.0.1.333 Mobile Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://ceshi.gdbadi.com/member/member_backend/index',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,en-US;q=0.9',
+  'cookie' => 'PHPSESSID=v07jjctgdtgoa1i79aehk87m01',
+)
+[ info ] [ PARAM ] array (
+  '/index/Index/pcenter' => '',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ SESSION ] INIT array (
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ RUN ] app\index\controller\Index->pcenter[ D:\web\hshop2\shop\index\controller\Index.php ]
+[ info ] [ VIEW ] ./themes/default/index/index\pcenter.html [ array (
+  0 => 'upgrade_conditions',
+  1 => 'user_name',
+  2 => 'user_phone',
+  3 => 'user_photo',
+  4 => 'vip_grade',
+  5 => 'user_id',
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2019-10-30T16:10:47+08:00 ] 121.32.177.144 GET ceshi.gdbadi.com/index/index/upgrade
+[运行时间：0.078000s] [吞吐率：12.82req/s] [内存消耗：2,671.28kb] [文件加载：49]
+[ info ] [ LANG ] D:\web\hshop2\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'index',
+    2 => 'upgrade',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'ceshi.gdbadi.com',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Linux; Android 9; EVR-AL00 Build/HUAWEIEVR-AL00) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/70.0.3538.64 HuaweiBrowser/10.0.1.333 Mobile Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://ceshi.gdbadi.com/index/Index/pcenter',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,en-US;q=0.9',
+  'cookie' => 'PHPSESSID=v07jjctgdtgoa1i79aehk87m01',
+)
+[ info ] [ PARAM ] array (
+  '/index/index/upgrade' => '',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ SESSION ] INIT array (
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ RUN ] app\index\controller\Index->upgrade[ D:\web\hshop2\shop\index\controller\Index.php ]
+[ info ] [ VIEW ] ./themes/default/index/index\upgrade.html [ array (
+  0 => 'upgrade_conditions',
+  1 => 'upgrade_pic',
+  2 => 'list',
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2019-10-30T16:11:00+08:00 ] 121.32.177.144 GET ceshi.gdbadi.com/index/Goods/details/id/43
+[运行时间：0.187200s] [吞吐率：5.34req/s] [内存消耗：2,929.96kb] [文件加载：53]
+[ info ] [ LANG ] D:\web\hshop2\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'Goods',
+    2 => 'details',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'ceshi.gdbadi.com',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Linux; Android 9; EVR-AL00 Build/HUAWEIEVR-AL00) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/70.0.3538.64 HuaweiBrowser/10.0.1.333 Mobile Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://ceshi.gdbadi.com/index/index/upgrade',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,en-US;q=0.9',
+  'cookie' => 'PHPSESSID=v07jjctgdtgoa1i79aehk87m01',
+)
+[ info ] [ PARAM ] array (
+  '/index/Goods/details/id/43' => '',
+  'id' => '43',
+)
+[ info ] [ CACHE ] INIT File
+[ info ] [ SESSION ] INIT array (
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\index\controller\Goods->details[ D:\web\hshop2\shop\index\controller\Goods.php ]
+[ info ] [ VIEW ] ./themes/default/index/goods\details.html [ array (
+  0 => 'top_nav',
+  1 => 'my_vip_grade',
+  2 => 'qiangg',
+  3 => 'vip_grade',
+  4 => 'goods',
+  5 => 'goods_image',
+  6 => 'goods_discount',
+  7 => 'attribute',
+  8 => 'goods_description',
+  9 => 'goods_brand',
+  10 => 'cartnum',
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2019-10-30T16:11:04+08:00 ] 121.32.177.144 GET ceshi.gdbadi.com/index/index/upgrade
+[运行时间：0.062400s] [吞吐率：16.03req/s] [内存消耗：2,671.24kb] [文件加载：49]
+[ info ] [ LANG ] D:\web\hshop2\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'index',
+    2 => 'upgrade',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'ceshi.gdbadi.com',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Linux; Android 9; EVR-AL00 Build/HUAWEIEVR-AL00) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/70.0.3538.64 HuaweiBrowser/10.0.1.333 Mobile Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://ceshi.gdbadi.com/index/Index/pcenter',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,en-US;q=0.9',
+  'cookie' => 'PHPSESSID=v07jjctgdtgoa1i79aehk87m01',
+)
+[ info ] [ PARAM ] array (
+  '/index/index/upgrade' => '',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ SESSION ] INIT array (
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ RUN ] app\index\controller\Index->upgrade[ D:\web\hshop2\shop\index\controller\Index.php ]
+[ info ] [ VIEW ] ./themes/default/index/index\upgrade.html [ array (
+  0 => 'upgrade_conditions',
+  1 => 'upgrade_pic',
+  2 => 'list',
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2019-10-30T16:11:09+08:00 ] 121.32.177.144 GET ceshi.gdbadi.com/index/Goods/details/id/44
+[运行时间：0.093600s] [吞吐率：10.68req/s] [内存消耗：2,929.96kb] [文件加载：53]
+[ info ] [ LANG ] D:\web\hshop2\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'Goods',
+    2 => 'details',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'ceshi.gdbadi.com',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Linux; Android 9; EVR-AL00 Build/HUAWEIEVR-AL00) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/70.0.3538.64 HuaweiBrowser/10.0.1.333 Mobile Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://ceshi.gdbadi.com/index/index/upgrade',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,en-US;q=0.9',
+  'cookie' => 'PHPSESSID=v07jjctgdtgoa1i79aehk87m01',
+)
+[ info ] [ PARAM ] array (
+  '/index/Goods/details/id/44' => '',
+  'id' => '44',
+)
+[ info ] [ CACHE ] INIT File
+[ info ] [ SESSION ] INIT array (
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\index\controller\Goods->details[ D:\web\hshop2\shop\index\controller\Goods.php ]
+[ info ] [ VIEW ] ./themes/default/index/goods\details.html [ array (
+  0 => 'top_nav',
+  1 => 'my_vip_grade',
+  2 => 'qiangg',
+  3 => 'vip_grade',
+  4 => 'goods',
+  5 => 'goods_image',
+  6 => 'goods_discount',
+  7 => 'attribute',
+  8 => 'goods_description',
+  9 => 'goods_brand',
+  10 => 'cartnum',
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2019-10-30T16:11:25+08:00 ] 121.32.177.144 GET ceshi.gdbadi.com/index/index/upgrade
+[运行时间：0.046800s] [吞吐率：21.37req/s] [内存消耗：2,671.28kb] [文件加载：49]
+[ info ] [ LANG ] D:\web\hshop2\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'index',
+    2 => 'upgrade',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'ceshi.gdbadi.com',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Linux; Android 9; EVR-AL00 Build/HUAWEIEVR-AL00) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/70.0.3538.64 HuaweiBrowser/10.0.1.333 Mobile Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://ceshi.gdbadi.com/index/Index/pcenter',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,en-US;q=0.9',
+  'cookie' => 'PHPSESSID=v07jjctgdtgoa1i79aehk87m01',
+)
+[ info ] [ PARAM ] array (
+  '/index/index/upgrade' => '',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ SESSION ] INIT array (
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ RUN ] app\index\controller\Index->upgrade[ D:\web\hshop2\shop\index\controller\Index.php ]
+[ info ] [ VIEW ] ./themes/default/index/index\upgrade.html [ array (
+  0 => 'upgrade_conditions',
+  1 => 'upgrade_pic',
+  2 => 'list',
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2019-10-30T16:11:26+08:00 ] 121.32.177.144 GET ceshi.gdbadi.com/index/Index/pcenter
+[运行时间：0.062400s] [吞吐率：16.03req/s] [内存消耗：2,977.28kb] [文件加载：51]
+[ info ] [ LANG ] D:\web\hshop2\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'Index',
+    2 => 'pcenter',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'ceshi.gdbadi.com',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Linux; Android 9; EVR-AL00 Build/HUAWEIEVR-AL00) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/70.0.3538.64 HuaweiBrowser/10.0.1.333 Mobile Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://ceshi.gdbadi.com/member/member_backend/index',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,en-US;q=0.9',
+  'cookie' => 'PHPSESSID=v07jjctgdtgoa1i79aehk87m01',
+)
+[ info ] [ PARAM ] array (
+  '/index/Index/pcenter' => '',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ SESSION ] INIT array (
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ RUN ] app\index\controller\Index->pcenter[ D:\web\hshop2\shop\index\controller\Index.php ]
+[ info ] [ VIEW ] ./themes/default/index/index\pcenter.html [ array (
+  0 => 'upgrade_conditions',
+  1 => 'user_name',
+  2 => 'user_phone',
+  3 => 'user_photo',
+  4 => 'vip_grade',
+  5 => 'user_id',
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2019-10-30T16:11:30+08:00 ] 121.32.177.144 GET ceshi.gdbadi.com/index/Index/index
+[运行时间：0.093600s] [吞吐率：10.68req/s] [内存消耗：2,977.66kb] [文件加载：49]
+[ info ] [ LANG ] D:\web\hshop2\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'Index',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'ceshi.gdbadi.com',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Linux; Android 9; EVR-AL00 Build/HUAWEIEVR-AL00) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/70.0.3538.64 HuaweiBrowser/10.0.1.333 Mobile Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://ceshi.gdbadi.com/index/Index/pcenter',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,en-US;q=0.9',
+  'cookie' => 'PHPSESSID=v07jjctgdtgoa1i79aehk87m01',
+)
+[ info ] [ PARAM ] array (
+  '/index/Index/index' => '',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ SESSION ] INIT array (
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ RUN ] app\index\controller\Index->index[ D:\web\hshop2\shop\index\controller\Index.php ]
+[ info ] [ VIEW ] ./themes/default/index/index\index.html [ array (
+  0 => 'upgrade_conditions',
+  1 => 'brand',
+  2 => 'guesslike',
+  3 => 'newlist',
+  4 => 'popular',
+  5 => 'frontend_images',
+  6 => 'ggao',
+  7 => 'pic',
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2019-10-30T16:11:43+08:00 ] 121.32.177.144 GET ceshi.gdbadi.com/index/index/zerolist
+[运行时间：0.062400s] [吞吐率：16.03req/s] [内存消耗：2,675.66kb] [文件加载：49]
+[ info ] [ LANG ] D:\web\hshop2\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'index',
+    2 => 'zerolist',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'ceshi.gdbadi.com',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Linux; Android 9; EVR-AL00 Build/HUAWEIEVR-AL00) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/70.0.3538.64 HuaweiBrowser/10.0.1.333 Mobile Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://ceshi.gdbadi.com/index/Index/index',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,en-US;q=0.9',
+  'cookie' => 'PHPSESSID=v07jjctgdtgoa1i79aehk87m01',
+)
+[ info ] [ PARAM ] array (
+  '/index/index/zerolist' => '',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ SESSION ] INIT array (
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ RUN ] app\index\controller\Index->zerolist[ D:\web\hshop2\shop\index\controller\Index.php ]
+[ info ] [ VIEW ] ./themes/default/index/index\zerolist.html [ array (
+  0 => 'upgrade_conditions',
+  1 => 'zerolist',
+  2 => 'zerolist_pic',
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2019-10-30T16:11:44+08:00 ] 121.32.177.144 GET ceshi.gdbadi.com/index/index/zerolist
+[运行时间：0.062400s] [吞吐率：16.03req/s] [内存消耗：2,675.66kb] [文件加载：49]
+[ info ] [ LANG ] D:\web\hshop2\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'index',
+    2 => 'zerolist',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'ceshi.gdbadi.com',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Linux; Android 9; EVR-AL00 Build/HUAWEIEVR-AL00) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/70.0.3538.64 HuaweiBrowser/10.0.1.333 Mobile Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://ceshi.gdbadi.com/index/Index/index',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,en-US;q=0.9',
+  'cookie' => 'PHPSESSID=v07jjctgdtgoa1i79aehk87m01',
+)
+[ info ] [ PARAM ] array (
+  '/index/index/zerolist' => '',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ SESSION ] INIT array (
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ RUN ] app\index\controller\Index->zerolist[ D:\web\hshop2\shop\index\controller\Index.php ]
+[ info ] [ VIEW ] ./themes/default/index/index\zerolist.html [ array (
+  0 => 'upgrade_conditions',
+  1 => 'zerolist',
+  2 => 'zerolist_pic',
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2019-10-30T16:11:58+08:00 ] 121.32.177.144 GET ceshi.gdbadi.com/index/Goods/details/id/48
+[运行时间：0.093600s] [吞吐率：10.68req/s] [内存消耗：2,929.97kb] [文件加载：53]
+[ info ] [ LANG ] D:\web\hshop2\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'Goods',
+    2 => 'details',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'ceshi.gdbadi.com',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Linux; Android 9; EVR-AL00 Build/HUAWEIEVR-AL00) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/70.0.3538.64 HuaweiBrowser/10.0.1.333 Mobile Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://ceshi.gdbadi.com/index/index/zerolist',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,en-US;q=0.9',
+  'cookie' => 'PHPSESSID=v07jjctgdtgoa1i79aehk87m01',
+)
+[ info ] [ PARAM ] array (
+  '/index/Goods/details/id/48' => '',
+  'id' => '48',
+)
+[ info ] [ CACHE ] INIT File
+[ info ] [ SESSION ] INIT array (
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\index\controller\Goods->details[ D:\web\hshop2\shop\index\controller\Goods.php ]
+[ info ] [ VIEW ] ./themes/default/index/goods\details.html [ array (
+  0 => 'top_nav',
+  1 => 'my_vip_grade',
+  2 => 'qiangg',
+  3 => 'vip_grade',
+  4 => 'goods',
+  5 => 'goods_image',
+  6 => 'goods_discount',
+  7 => 'attribute',
+  8 => 'goods_description',
+  9 => 'goods_brand',
+  10 => 'cartnum',
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2019-10-30T16:12:13+08:00 ] 121.32.177.144 GET ceshi.gdbadi.com/index/order/orders?id=48&num=1&attribute=
+[运行时间：0.171600s] [吞吐率：5.83req/s] [内存消耗：3,033.97kb] [文件加载：53]
+[ info ] [ LANG ] D:\web\hshop2\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'order',
+    2 => 'orders',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'ceshi.gdbadi.com',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Linux; Android 9; EVR-AL00 Build/HUAWEIEVR-AL00) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/70.0.3538.64 HuaweiBrowser/10.0.1.333 Mobile Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://ceshi.gdbadi.com/index/Goods/details/id/48',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,en-US;q=0.9',
+  'cookie' => 'PHPSESSID=v07jjctgdtgoa1i79aehk87m01',
+)
+[ info ] [ PARAM ] array (
+  '/index/order/orders' => '',
+  'id' => '48',
+  'num' => '1',
+  'attribute' => '',
+)
+[ info ] [ CACHE ] INIT File
+[ info ] [ SESSION ] INIT array (
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\index\controller\Order->orders[ D:\web\hshop2\shop\index\controller\Order.php ]
+[ info ] [ VIEW ] ./themes/default/index/order\orders.html [ array (
+  0 => 'top_nav',
+  1 => 'my_vip_grade',
+  2 => 'vip_grade',
+  3 => 'goods',
+  4 => 'num',
+  5 => 'attribute_value',
+  6 => 'goodzprice',
+  7 => 'freight',
+  8 => 'zprice',
+  9 => 'address',
+  10 => 'couponlist',
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2019-10-30T16:12:36+08:00 ] 121.32.177.144 POST ceshi.gdbadi.com/index/Order/subOrder
+[运行时间：0.093600s] [吞吐率：10.68req/s] [内存消耗：2,989.77kb] [文件加载：52]
+[ info ] [ LANG ] D:\web\hshop2\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'Order',
+    2 => 'subOrder',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'ceshi.gdbadi.com',
+  'connection' => 'keep-alive',
+  'content-length' => '159',
+  'accept' => '*/*',
+  'origin' => 'http://ceshi.gdbadi.com',
+  'x-requested-with' => 'XMLHttpRequest',
+  'user-agent' => 'Mozilla/5.0 (Linux; Android 9; EVR-AL00 Build/HUAWEIEVR-AL00) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/70.0.3538.64 HuaweiBrowser/10.0.1.333 Mobile Safari/537.36',
+  'content-type' => 'application/x-www-form-urlencoded; charset=UTF-8',
+  'referer' => 'http://ceshi.gdbadi.com/index/order/orders?id=48&num=1&attribute=',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,en-US;q=0.9',
+  'cookie' => 'PHPSESSID=v07jjctgdtgoa1i79aehk87m01',
+)
+[ info ] [ PARAM ] array (
+  '/index/Order/subOrder' => '',
+  'address_id' => '35',
+  'goods_id' => '48',
+  'price' => '109.4',
+  'goodzprice' => '89.6',
+  'freight' => '19.80',
+  'orderdata' => 
+  array (
+    0 => 
+    array (
+      0 => '48',
+      1 => '1',
+      2 => '',
+    ),
+  ),
+  'user_coupon_id' => '0',
+)
+[ info ] [ CACHE ] INIT File
+[ info ] [ SESSION ] INIT array (
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\index\controller\Order->subOrder[ D:\web\hshop2\shop\index\controller\Order.php ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2019-10-30T16:12:37+08:00 ] 121.32.177.144 GET ceshi.gdbadi.com/index/Pay/payment?id=170
+[运行时间：0.078000s] [吞吐率：12.82req/s] [内存消耗：2,868.25kb] [文件加载：53]
+[ info ] [ LANG ] D:\web\hshop2\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'Pay',
+    2 => 'payment',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'ceshi.gdbadi.com',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Linux; Android 9; EVR-AL00 Build/HUAWEIEVR-AL00) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/70.0.3538.64 HuaweiBrowser/10.0.1.333 Mobile Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://ceshi.gdbadi.com/index/order/orders?id=48&num=1&attribute=',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,en-US;q=0.9',
+  'cookie' => 'PHPSESSID=v07jjctgdtgoa1i79aehk87m01',
+)
+[ info ] [ PARAM ] array (
+  '/index/Pay/payment' => '',
+  'id' => '170',
+)
+[ info ] [ CACHE ] INIT File
+[ info ] [ SESSION ] INIT array (
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\index\controller\Pay->payment[ D:\web\hshop2\shop\index\controller\Pay.php ]
+[ info ] [ VIEW ] ./themes/default/index/pay\payment.html [ array (
+  0 => 'top_nav',
+  1 => 'my_vip_grade',
+  2 => 'is_number_goods',
+  3 => 'order',
+  4 => 'pay_nums',
+  5 => 'wallet',
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2019-10-30T16:12:40+08:00 ] 121.32.177.144 GET ceshi.gdbadi.com/index/order/orders?id=48&num=1&attribute=
+[运行时间：0.109200s] [吞吐率：9.16req/s] [内存消耗：3,033.97kb] [文件加载：53]
+[ info ] [ LANG ] D:\web\hshop2\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'order',
+    2 => 'orders',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'ceshi.gdbadi.com',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Linux; Android 9; EVR-AL00 Build/HUAWEIEVR-AL00) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/70.0.3538.64 HuaweiBrowser/10.0.1.333 Mobile Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://ceshi.gdbadi.com/index/Goods/details/id/48',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,en-US;q=0.9',
+  'cookie' => 'PHPSESSID=v07jjctgdtgoa1i79aehk87m01',
+)
+[ info ] [ PARAM ] array (
+  '/index/order/orders' => '',
+  'id' => '48',
+  'num' => '1',
+  'attribute' => '',
+)
+[ info ] [ CACHE ] INIT File
+[ info ] [ SESSION ] INIT array (
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\index\controller\Order->orders[ D:\web\hshop2\shop\index\controller\Order.php ]
+[ info ] [ VIEW ] ./themes/default/index/order\orders.html [ array (
+  0 => 'top_nav',
+  1 => 'my_vip_grade',
+  2 => 'vip_grade',
+  3 => 'goods',
+  4 => 'num',
+  5 => 'attribute_value',
+  6 => 'goodzprice',
+  7 => 'freight',
+  8 => 'zprice',
+  9 => 'address',
+  10 => 'couponlist',
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2019-10-30T16:12:47+08:00 ] 121.32.177.144 POST ceshi.gdbadi.com/index/Order/subOrder
+[运行时间：0.093600s] [吞吐率：10.68req/s] [内存消耗：2,989.77kb] [文件加载：52]
+[ info ] [ LANG ] D:\web\hshop2\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'Order',
+    2 => 'subOrder',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'ceshi.gdbadi.com',
+  'connection' => 'keep-alive',
+  'content-length' => '159',
+  'accept' => '*/*',
+  'origin' => 'http://ceshi.gdbadi.com',
+  'x-requested-with' => 'XMLHttpRequest',
+  'user-agent' => 'Mozilla/5.0 (Linux; Android 9; EVR-AL00 Build/HUAWEIEVR-AL00) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/70.0.3538.64 HuaweiBrowser/10.0.1.333 Mobile Safari/537.36',
+  'content-type' => 'application/x-www-form-urlencoded; charset=UTF-8',
+  'referer' => 'http://ceshi.gdbadi.com/index/order/orders?id=48&num=1&attribute=',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,en-US;q=0.9',
+  'cookie' => 'PHPSESSID=v07jjctgdtgoa1i79aehk87m01',
+)
+[ info ] [ PARAM ] array (
+  '/index/Order/subOrder' => '',
+  'address_id' => '35',
+  'goods_id' => '48',
+  'price' => '109.4',
+  'goodzprice' => '89.6',
+  'freight' => '19.80',
+  'orderdata' => 
+  array (
+    0 => 
+    array (
+      0 => '48',
+      1 => '1',
+      2 => '',
+    ),
+  ),
+  'user_coupon_id' => '0',
+)
+[ info ] [ CACHE ] INIT File
+[ info ] [ SESSION ] INIT array (
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\index\controller\Order->subOrder[ D:\web\hshop2\shop\index\controller\Order.php ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2019-10-30T16:12:47+08:00 ] 121.32.177.144 GET ceshi.gdbadi.com/index/Pay/payment?id=171
+[运行时间：0.062400s] [吞吐率：16.03req/s] [内存消耗：2,868.25kb] [文件加载：53]
+[ info ] [ LANG ] D:\web\hshop2\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'Pay',
+    2 => 'payment',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'ceshi.gdbadi.com',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Linux; Android 9; EVR-AL00 Build/HUAWEIEVR-AL00) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/70.0.3538.64 HuaweiBrowser/10.0.1.333 Mobile Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://ceshi.gdbadi.com/index/order/orders?id=48&num=1&attribute=',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,en-US;q=0.9',
+  'cookie' => 'PHPSESSID=v07jjctgdtgoa1i79aehk87m01',
+)
+[ info ] [ PARAM ] array (
+  '/index/Pay/payment' => '',
+  'id' => '171',
+)
+[ info ] [ CACHE ] INIT File
+[ info ] [ SESSION ] INIT array (
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\index\controller\Pay->payment[ D:\web\hshop2\shop\index\controller\Pay.php ]
+[ info ] [ VIEW ] ./themes/default/index/pay\payment.html [ array (
+  0 => 'top_nav',
+  1 => 'my_vip_grade',
+  2 => 'is_number_goods',
+  3 => 'order',
+  4 => 'pay_nums',
+  5 => 'wallet',
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2019-10-30T16:13:04+08:00 ] 121.32.177.144 GET ceshi.gdbadi.com/index/order/orders?id=48&num=1&attribute=
+[运行时间：0.093600s] [吞吐率：10.68req/s] [内存消耗：3,033.95kb] [文件加载：53]
+[ info ] [ LANG ] D:\web\hshop2\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'order',
+    2 => 'orders',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'ceshi.gdbadi.com',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Linux; Android 9; EVR-AL00 Build/HUAWEIEVR-AL00) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/70.0.3538.64 HuaweiBrowser/10.0.1.333 Mobile Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://ceshi.gdbadi.com/index/Pay/payment?id=170',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,en-US;q=0.9',
+  'cookie' => 'PHPSESSID=v07jjctgdtgoa1i79aehk87m01',
+)
+[ info ] [ PARAM ] array (
+  '/index/order/orders' => '',
+  'id' => '48',
+  'num' => '1',
+  'attribute' => '',
+)
+[ info ] [ CACHE ] INIT File
+[ info ] [ SESSION ] INIT array (
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\index\controller\Order->orders[ D:\web\hshop2\shop\index\controller\Order.php ]
+[ info ] [ VIEW ] ./themes/default/index/order\orders.html [ array (
+  0 => 'top_nav',
+  1 => 'my_vip_grade',
+  2 => 'vip_grade',
+  3 => 'goods',
+  4 => 'num',
+  5 => 'attribute_value',
+  6 => 'goodzprice',
+  7 => 'freight',
+  8 => 'zprice',
+  9 => 'address',
+  10 => 'couponlist',
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2019-10-30T16:13:06+08:00 ] 121.32.177.144 GET ceshi.gdbadi.com/index/Goods/details/id/48
+[运行时间：0.109200s] [吞吐率：9.16req/s] [内存消耗：2,930.02kb] [文件加载：53]
+[ info ] [ LANG ] D:\web\hshop2\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'Goods',
+    2 => 'details',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'ceshi.gdbadi.com',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Linux; Android 9; EVR-AL00 Build/HUAWEIEVR-AL00) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/70.0.3538.64 HuaweiBrowser/10.0.1.333 Mobile Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://ceshi.gdbadi.com/index/index/zerolist',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,en-US;q=0.9',
+  'cookie' => 'PHPSESSID=v07jjctgdtgoa1i79aehk87m01',
+)
+[ info ] [ PARAM ] array (
+  '/index/Goods/details/id/48' => '',
+  'id' => '48',
+)
+[ info ] [ CACHE ] INIT File
+[ info ] [ SESSION ] INIT array (
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\index\controller\Goods->details[ D:\web\hshop2\shop\index\controller\Goods.php ]
+[ info ] [ VIEW ] ./themes/default/index/goods\details.html [ array (
+  0 => 'top_nav',
+  1 => 'my_vip_grade',
+  2 => 'qiangg',
+  3 => 'vip_grade',
+  4 => 'goods',
+  5 => 'goods_image',
+  6 => 'goods_discount',
+  7 => 'attribute',
+  8 => 'goods_description',
+  9 => 'goods_brand',
+  10 => 'cartnum',
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2019-10-30T16:13:08+08:00 ] 121.32.177.144 GET ceshi.gdbadi.com/index/index/zerolist
+[运行时间：0.078000s] [吞吐率：12.82req/s] [内存消耗：2,675.66kb] [文件加载：49]
+[ info ] [ LANG ] D:\web\hshop2\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'index',
+    2 => 'zerolist',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'ceshi.gdbadi.com',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Linux; Android 9; EVR-AL00 Build/HUAWEIEVR-AL00) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/70.0.3538.64 HuaweiBrowser/10.0.1.333 Mobile Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://ceshi.gdbadi.com/index/Index/index',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,en-US;q=0.9',
+  'cookie' => 'PHPSESSID=v07jjctgdtgoa1i79aehk87m01',
+)
+[ info ] [ PARAM ] array (
+  '/index/index/zerolist' => '',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ SESSION ] INIT array (
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ RUN ] app\index\controller\Index->zerolist[ D:\web\hshop2\shop\index\controller\Index.php ]
+[ info ] [ VIEW ] ./themes/default/index/index\zerolist.html [ array (
+  0 => 'upgrade_conditions',
+  1 => 'zerolist',
+  2 => 'zerolist_pic',
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2019-10-30T16:13:09+08:00 ] 121.32.177.144 GET ceshi.gdbadi.com/index/Goods/details/id/47
+[运行时间：0.124800s] [吞吐率：8.01req/s] [内存消耗：2,930.04kb] [文件加载：53]
+[ info ] [ LANG ] D:\web\hshop2\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'Goods',
+    2 => 'details',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'ceshi.gdbadi.com',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Linux; Android 9; EVR-AL00 Build/HUAWEIEVR-AL00) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/70.0.3538.64 HuaweiBrowser/10.0.1.333 Mobile Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://ceshi.gdbadi.com/index/index/zerolist',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,en-US;q=0.9',
+  'cookie' => 'PHPSESSID=v07jjctgdtgoa1i79aehk87m01',
+)
+[ info ] [ PARAM ] array (
+  '/index/Goods/details/id/47' => '',
+  'id' => '47',
+)
+[ info ] [ CACHE ] INIT File
+[ info ] [ SESSION ] INIT array (
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\index\controller\Goods->details[ D:\web\hshop2\shop\index\controller\Goods.php ]
+[ info ] [ VIEW ] ./themes/default/index/goods\details.html [ array (
+  0 => 'top_nav',
+  1 => 'my_vip_grade',
+  2 => 'qiangg',
+  3 => 'vip_grade',
+  4 => 'goods',
+  5 => 'goods_image',
+  6 => 'goods_discount',
+  7 => 'attribute',
+  8 => 'goods_description',
+  9 => 'goods_brand',
+  10 => 'cartnum',
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2019-10-30T16:13:14+08:00 ] 121.32.177.144 GET ceshi.gdbadi.com/index/order/orders?id=47&num=1&attribute=
+[运行时间：0.109200s] [吞吐率：9.16req/s] [内存消耗：3,033.97kb] [文件加载：53]
+[ info ] [ LANG ] D:\web\hshop2\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'order',
+    2 => 'orders',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'ceshi.gdbadi.com',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Linux; Android 9; EVR-AL00 Build/HUAWEIEVR-AL00) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/70.0.3538.64 HuaweiBrowser/10.0.1.333 Mobile Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://ceshi.gdbadi.com/index/Goods/details/id/47',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,en-US;q=0.9',
+  'cookie' => 'PHPSESSID=v07jjctgdtgoa1i79aehk87m01',
+)
+[ info ] [ PARAM ] array (
+  '/index/order/orders' => '',
+  'id' => '47',
+  'num' => '1',
+  'attribute' => '',
+)
+[ info ] [ CACHE ] INIT File
+[ info ] [ SESSION ] INIT array (
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\index\controller\Order->orders[ D:\web\hshop2\shop\index\controller\Order.php ]
+[ info ] [ VIEW ] ./themes/default/index/order\orders.html [ array (
+  0 => 'top_nav',
+  1 => 'my_vip_grade',
+  2 => 'vip_grade',
+  3 => 'goods',
+  4 => 'num',
+  5 => 'attribute_value',
+  6 => 'goodzprice',
+  7 => 'freight',
+  8 => 'zprice',
+  9 => 'address',
+  10 => 'couponlist',
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2019-10-30T16:13:27+08:00 ] 121.32.177.144 POST ceshi.gdbadi.com/index/Order/subOrder
+[运行时间：0.093600s] [吞吐率：10.68req/s] [内存消耗：2,989.88kb] [文件加载：52]
+[ info ] [ LANG ] D:\web\hshop2\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'Order',
+    2 => 'subOrder',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'ceshi.gdbadi.com',
+  'connection' => 'keep-alive',
+  'content-length' => '157',
+  'accept' => '*/*',
+  'origin' => 'http://ceshi.gdbadi.com',
+  'x-requested-with' => 'XMLHttpRequest',
+  'user-agent' => 'Mozilla/5.0 (Linux; Android 9; EVR-AL00 Build/HUAWEIEVR-AL00) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/70.0.3538.64 HuaweiBrowser/10.0.1.333 Mobile Safari/537.36',
+  'content-type' => 'application/x-www-form-urlencoded; charset=UTF-8',
+  'referer' => 'http://ceshi.gdbadi.com/index/order/orders?id=47&num=1&attribute=',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,en-US;q=0.9',
+  'cookie' => 'PHPSESSID=v07jjctgdtgoa1i79aehk87m01',
+)
+[ info ] [ PARAM ] array (
+  '/index/Order/subOrder' => '',
+  'address_id' => '35',
+  'goods_id' => '47',
+  'price' => '101.8',
+  'goodzprice' => '82',
+  'freight' => '19.80',
+  'orderdata' => 
+  array (
+    0 => 
+    array (
+      0 => '47',
+      1 => '1',
+      2 => '',
+    ),
+  ),
+  'user_coupon_id' => '0',
+)
+[ info ] [ CACHE ] INIT File
+[ info ] [ SESSION ] INIT array (
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\index\controller\Order->subOrder[ D:\web\hshop2\shop\index\controller\Order.php ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2019-10-30T16:13:27+08:00 ] 121.32.177.144 GET ceshi.gdbadi.com/index/Pay/payment?id=172
+[运行时间：0.062400s] [吞吐率：16.03req/s] [内存消耗：2,868.30kb] [文件加载：53]
+[ info ] [ LANG ] D:\web\hshop2\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'Pay',
+    2 => 'payment',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'ceshi.gdbadi.com',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Linux; Android 9; EVR-AL00 Build/HUAWEIEVR-AL00) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/70.0.3538.64 HuaweiBrowser/10.0.1.333 Mobile Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://ceshi.gdbadi.com/index/order/orders?id=47&num=1&attribute=',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,en-US;q=0.9',
+  'cookie' => 'PHPSESSID=v07jjctgdtgoa1i79aehk87m01',
+)
+[ info ] [ PARAM ] array (
+  '/index/Pay/payment' => '',
+  'id' => '172',
+)
+[ info ] [ CACHE ] INIT File
+[ info ] [ SESSION ] INIT array (
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\index\controller\Pay->payment[ D:\web\hshop2\shop\index\controller\Pay.php ]
+[ info ] [ VIEW ] ./themes/default/index/pay\payment.html [ array (
+  0 => 'top_nav',
+  1 => 'my_vip_grade',
+  2 => 'is_number_goods',
+  3 => 'order',
+  4 => 'pay_nums',
+  5 => 'wallet',
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2019-10-30T16:13:35+08:00 ] 121.32.177.144 GET ceshi.gdbadi.com/index/order/orders?id=47&num=1&attribute=
+[运行时间：0.093600s] [吞吐率：10.68req/s] [内存消耗：3,033.97kb] [文件加载：53]
+[ info ] [ LANG ] D:\web\hshop2\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'order',
+    2 => 'orders',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'ceshi.gdbadi.com',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Linux; Android 9; EVR-AL00 Build/HUAWEIEVR-AL00) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/70.0.3538.64 HuaweiBrowser/10.0.1.333 Mobile Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://ceshi.gdbadi.com/index/Goods/details/id/47',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,en-US;q=0.9',
+  'cookie' => 'PHPSESSID=v07jjctgdtgoa1i79aehk87m01',
+)
+[ info ] [ PARAM ] array (
+  '/index/order/orders' => '',
+  'id' => '47',
+  'num' => '1',
+  'attribute' => '',
+)
+[ info ] [ CACHE ] INIT File
+[ info ] [ SESSION ] INIT array (
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\index\controller\Order->orders[ D:\web\hshop2\shop\index\controller\Order.php ]
+[ info ] [ VIEW ] ./themes/default/index/order\orders.html [ array (
+  0 => 'top_nav',
+  1 => 'my_vip_grade',
+  2 => 'vip_grade',
+  3 => 'goods',
+  4 => 'num',
+  5 => 'attribute_value',
+  6 => 'goodzprice',
+  7 => 'freight',
+  8 => 'zprice',
+  9 => 'address',
+  10 => 'couponlist',
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2019-10-30T16:13:40+08:00 ] 121.32.177.144 GET ceshi.gdbadi.com/index/Goods/details/id/47
+[运行时间：0.109200s] [吞吐率：9.16req/s] [内存消耗：2,930.04kb] [文件加载：53]
+[ info ] [ LANG ] D:\web\hshop2\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'Goods',
+    2 => 'details',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'ceshi.gdbadi.com',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Linux; Android 9; EVR-AL00 Build/HUAWEIEVR-AL00) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/70.0.3538.64 HuaweiBrowser/10.0.1.333 Mobile Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://ceshi.gdbadi.com/index/index/zerolist',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,en-US;q=0.9',
+  'cookie' => 'PHPSESSID=v07jjctgdtgoa1i79aehk87m01',
+)
+[ info ] [ PARAM ] array (
+  '/index/Goods/details/id/47' => '',
+  'id' => '47',
+)
+[ info ] [ CACHE ] INIT File
+[ info ] [ SESSION ] INIT array (
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\index\controller\Goods->details[ D:\web\hshop2\shop\index\controller\Goods.php ]
+[ info ] [ VIEW ] ./themes/default/index/goods\details.html [ array (
+  0 => 'top_nav',
+  1 => 'my_vip_grade',
+  2 => 'qiangg',
+  3 => 'vip_grade',
+  4 => 'goods',
+  5 => 'goods_image',
+  6 => 'goods_discount',
+  7 => 'attribute',
+  8 => 'goods_description',
+  9 => 'goods_brand',
+  10 => 'cartnum',
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2019-10-30T16:13:52+08:00 ] 121.32.177.144 GET ceshi.gdbadi.com/index/index/zerolist
+[运行时间：0.062400s] [吞吐率：16.03req/s] [内存消耗：2,675.66kb] [文件加载：49]
+[ info ] [ LANG ] D:\web\hshop2\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'index',
+    2 => 'zerolist',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'ceshi.gdbadi.com',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Linux; Android 9; EVR-AL00 Build/HUAWEIEVR-AL00) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/70.0.3538.64 HuaweiBrowser/10.0.1.333 Mobile Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://ceshi.gdbadi.com/index/Index/index',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,en-US;q=0.9',
+  'cookie' => 'PHPSESSID=v07jjctgdtgoa1i79aehk87m01',
+)
+[ info ] [ PARAM ] array (
+  '/index/index/zerolist' => '',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ SESSION ] INIT array (
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ RUN ] app\index\controller\Index->zerolist[ D:\web\hshop2\shop\index\controller\Index.php ]
+[ info ] [ VIEW ] ./themes/default/index/index\zerolist.html [ array (
+  0 => 'upgrade_conditions',
+  1 => 'zerolist',
+  2 => 'zerolist_pic',
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2019-10-30T16:13:54+08:00 ] 121.32.177.144 GET ceshi.gdbadi.com/index/Goods/details/id/45
+[运行时间：0.109200s] [吞吐率：9.16req/s] [内存消耗：2,930.12kb] [文件加载：53]
+[ info ] [ LANG ] D:\web\hshop2\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'Goods',
+    2 => 'details',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'ceshi.gdbadi.com',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Linux; Android 9; EVR-AL00 Build/HUAWEIEVR-AL00) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/70.0.3538.64 HuaweiBrowser/10.0.1.333 Mobile Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://ceshi.gdbadi.com/index/index/zerolist',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,en-US;q=0.9',
+  'cookie' => 'PHPSESSID=v07jjctgdtgoa1i79aehk87m01',
+)
+[ info ] [ PARAM ] array (
+  '/index/Goods/details/id/45' => '',
+  'id' => '45',
+)
+[ info ] [ CACHE ] INIT File
+[ info ] [ SESSION ] INIT array (
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\index\controller\Goods->details[ D:\web\hshop2\shop\index\controller\Goods.php ]
+[ info ] [ VIEW ] ./themes/default/index/goods\details.html [ array (
+  0 => 'top_nav',
+  1 => 'my_vip_grade',
+  2 => 'qiangg',
+  3 => 'vip_grade',
+  4 => 'goods',
+  5 => 'goods_image',
+  6 => 'goods_discount',
+  7 => 'attribute',
+  8 => 'goods_description',
+  9 => 'goods_brand',
+  10 => 'cartnum',
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2019-10-30T16:13:58+08:00 ] 121.32.177.144 GET ceshi.gdbadi.com/index/order/orders?id=45&num=1&attribute=
+[运行时间：0.109200s] [吞吐率：9.16req/s] [内存消耗：3,033.97kb] [文件加载：53]
+[ info ] [ LANG ] D:\web\hshop2\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'order',
+    2 => 'orders',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'ceshi.gdbadi.com',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Linux; Android 9; EVR-AL00 Build/HUAWEIEVR-AL00) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/70.0.3538.64 HuaweiBrowser/10.0.1.333 Mobile Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://ceshi.gdbadi.com/index/Goods/details/id/45',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,en-US;q=0.9',
+  'cookie' => 'PHPSESSID=v07jjctgdtgoa1i79aehk87m01',
+)
+[ info ] [ PARAM ] array (
+  '/index/order/orders' => '',
+  'id' => '45',
+  'num' => '1',
+  'attribute' => '',
+)
+[ info ] [ CACHE ] INIT File
+[ info ] [ SESSION ] INIT array (
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\index\controller\Order->orders[ D:\web\hshop2\shop\index\controller\Order.php ]
+[ info ] [ VIEW ] ./themes/default/index/order\orders.html [ array (
+  0 => 'top_nav',
+  1 => 'my_vip_grade',
+  2 => 'vip_grade',
+  3 => 'goods',
+  4 => 'num',
+  5 => 'attribute_value',
+  6 => 'goodzprice',
+  7 => 'freight',
+  8 => 'zprice',
+  9 => 'address',
+  10 => 'couponlist',
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2019-10-30T16:14:01+08:00 ] 121.32.177.144 GET ceshi.gdbadi.com/index/Goods/details/id/45
+[运行时间：0.109200s] [吞吐率：9.16req/s] [内存消耗：2,930.12kb] [文件加载：53]
+[ info ] [ LANG ] D:\web\hshop2\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'Goods',
+    2 => 'details',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'ceshi.gdbadi.com',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Linux; Android 9; EVR-AL00 Build/HUAWEIEVR-AL00) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/70.0.3538.64 HuaweiBrowser/10.0.1.333 Mobile Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://ceshi.gdbadi.com/index/index/zerolist',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,en-US;q=0.9',
+  'cookie' => 'PHPSESSID=v07jjctgdtgoa1i79aehk87m01',
+)
+[ info ] [ PARAM ] array (
+  '/index/Goods/details/id/45' => '',
+  'id' => '45',
+)
+[ info ] [ CACHE ] INIT File
+[ info ] [ SESSION ] INIT array (
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\index\controller\Goods->details[ D:\web\hshop2\shop\index\controller\Goods.php ]
+[ info ] [ VIEW ] ./themes/default/index/goods\details.html [ array (
+  0 => 'top_nav',
+  1 => 'my_vip_grade',
+  2 => 'qiangg',
+  3 => 'vip_grade',
+  4 => 'goods',
+  5 => 'goods_image',
+  6 => 'goods_discount',
+  7 => 'attribute',
+  8 => 'goods_description',
+  9 => 'goods_brand',
+  10 => 'cartnum',
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2019-10-30T16:14:02+08:00 ] 121.32.177.144 GET ceshi.gdbadi.com/index/index/zerolist
+[运行时间：0.078000s] [吞吐率：12.82req/s] [内存消耗：2,675.66kb] [文件加载：49]
+[ info ] [ LANG ] D:\web\hshop2\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'index',
+    2 => 'zerolist',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'ceshi.gdbadi.com',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Linux; Android 9; EVR-AL00 Build/HUAWEIEVR-AL00) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/70.0.3538.64 HuaweiBrowser/10.0.1.333 Mobile Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://ceshi.gdbadi.com/index/Index/index',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,en-US;q=0.9',
+  'cookie' => 'PHPSESSID=v07jjctgdtgoa1i79aehk87m01',
+)
+[ info ] [ PARAM ] array (
+  '/index/index/zerolist' => '',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ SESSION ] INIT array (
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ RUN ] app\index\controller\Index->zerolist[ D:\web\hshop2\shop\index\controller\Index.php ]
+[ info ] [ VIEW ] ./themes/default/index/index\zerolist.html [ array (
+  0 => 'upgrade_conditions',
+  1 => 'zerolist',
+  2 => 'zerolist_pic',
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2019-10-30T16:14:03+08:00 ] 121.32.177.144 GET ceshi.gdbadi.com/index/Index/index
+[运行时间：0.109200s] [吞吐率：9.16req/s] [内存消耗：2,977.66kb] [文件加载：49]
+[ info ] [ LANG ] D:\web\hshop2\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'Index',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'ceshi.gdbadi.com',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Linux; Android 9; EVR-AL00 Build/HUAWEIEVR-AL00) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/70.0.3538.64 HuaweiBrowser/10.0.1.333 Mobile Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://ceshi.gdbadi.com/index/Index/pcenter',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,en-US;q=0.9',
+  'cookie' => 'PHPSESSID=v07jjctgdtgoa1i79aehk87m01',
+)
+[ info ] [ PARAM ] array (
+  '/index/Index/index' => '',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ SESSION ] INIT array (
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ RUN ] app\index\controller\Index->index[ D:\web\hshop2\shop\index\controller\Index.php ]
+[ info ] [ VIEW ] ./themes/default/index/index\index.html [ array (
+  0 => 'upgrade_conditions',
+  1 => 'brand',
+  2 => 'guesslike',
+  3 => 'newlist',
+  4 => 'popular',
+  5 => 'frontend_images',
+  6 => 'ggao',
+  7 => 'pic',
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2019-10-30T16:14:07+08:00 ] 121.32.177.144 GET ceshi.gdbadi.com/admin/Index/index
+[运行时间：0.078000s] [吞吐率：12.82req/s] [内存消耗：3,106.36kb] [文件加载：56]
+[ info ] [ LANG ] D:\web\hshop2\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'Index',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'ceshi.gdbadi.com',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Linux; Android 9; EVR-AL00 Build/HUAWEIEVR-AL00) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/70.0.3538.64 HuaweiBrowser/10.0.1.333 Mobile Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,en-US;q=0.9',
+  'cookie' => 'PHPSESSID=v07jjctgdtgoa1i79aehk87m01',
+)
+[ info ] [ PARAM ] array (
+  '/admin/Index/index' => '',
+)
+[ info ] [ CACHE ] INIT File
+[ info ] [ SESSION ] INIT array (
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\admin\controller\Index->index[ D:\web\hshop2\shop\admin\controller\Index.php ]
+[ info ] [ VIEW ] ./shop/admin\view\index\index.html [ array (
+  0 => 'admin_menu',
+  1 => 'total_order',
+  2 => 'today_order',
+  3 => 'total_money',
+  4 => 'today_money',
+  5 => 'user_action_total',
+  6 => 'today_user_action',
+  7 => 'today_member',
+  8 => 'member_count',
+  9 => 'user_action',
+  10 => 'uc_empty',
+  11 => 'order_list',
+  12 => 'empty',
+) ]
+[ info ] [ LOG ] INIT File

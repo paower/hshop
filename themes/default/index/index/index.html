@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+		<meta name="viewport" id="viewport" content="width=device-width,initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+		<meta name="format-detection" content="telephone=no" />
+		<link href="__PUBLIC__/css/reset.css" rel="stylesheet" type="text/css">
+		<link href="__PUBLIC__/css/index.css" rel="stylesheet" type="text/css">
+		<script type="text/javascript" src="__PUBLIC__/js/jquery-1.8.3.min.js"></script>
+		<script type="text/javascript" src="__PUBLIC__/js/touchslide.1.1.js"></script>
+		<script type="text/javascript" src="__PUBLIC__/js/scrolltopcontrol.js"></script>
+		<style>
+			.p1 {  
+				overflow: hidden;
+				overflow-x: auto;
+				white-space: nowrap;
+			}
+			.p1 .hengxiang{
+				width: 33.3%;
+				margin-right: 5px;
+				display: inline-block;
+			}  
+			.p1 .hengxiang .special-sale-box2{
+				width: 100% !important; 
+			}
+		</style>
+		{if condition="$upgrade_conditions!=1"}
+		<style>
+			.classify-menu-box1{
+				width: 25% !important;
+			}
+		</style>
+		{/if}
+	</head>
+	<body>
+		<div class="near-box">
+			<!--头部开始-->
+			<div class="yx-index-top">
+				<div class="index-top-box1">
+				</div>
+				<div class="index-top-box2">
+					<span class="fresh-toptext1">商城首页</span>
+				</div>
+				<a href="{:url('search')}" class="index-top-box1">
+					<span class="index-top-img1"><img src="__PUBLIC__/picture/search3.png" alt=""></span>
+				</a>
+			</div>
+			<!--头部结束-->
+			<div class="index-bigbox">
+				<!--轮播开始-->
+				<div id="slideBox" class="slideBox">
+					<div class="bd" id="bd">
+						<ul>
+							{volist name="frontend_images" id="frontend_images_item" key="frontend_images_index"}
+								<li>
+									<a class="pic" href="{$frontend_images_item.href}"><img src="__UPLOADS__/{$frontend_images_item.frontend_images_image}" /></a>
+								</li>
+							{/volist}
+						</ul>
+					</div>
+					<div class="hd">
+						<ul></ul>
+					</div>
+				</div>
+				<!--轮播开始-->
+				<!--分类导航开始-->
+				<div class="classify-menu">
+					<a href="{:url('index/popular')}" class="classify-menu-box1">
+						<span class="classify-menu-img1"><img src="__PUBLIC__/picture/diamond.png" alt=""></span>
+						<span class="classify-menu-text1">分销价区</span>
+					</a>
+					<a href="{:url('index/newest')}" class="classify-menu-box1">
+						<span class="classify-menu-img1 img-color2"><img src="__PUBLIC__/picture/package.png" alt=""></span>
+						<span class="classify-menu-text1">0元抢购</span>
+					</a>
+					<a href="{:url('index/zerolist')}" class="classify-menu-box1">
+						<span class="classify-menu-img1 img-color3"><img src="__PUBLIC__/picture/classification01.png" alt=""></span>
+						<span class="classify-menu-text1">1元礼品</span>
+					</a>
+					<a href="{:url('index/groupbuy')}" class="classify-menu-box1">
+						<span class="classify-menu-img1 img-color4"><img src="__PUBLIC__/picture/personal-center-img102.png" alt=""></span>
+						<span class="classify-menu-text1">团购区</span>
+					</a>
+					{if condition="$upgrade_conditions==1"}
+					<a href="{:url('index/upgrade')}" class="classify-menu-box1">
+						<span class="classify-menu-img1 img-color6"><img src="__PUBLIC__/picture/classification01.png" alt=""></span>
+						<span class="classify-menu-text1">套装区</span>
+					</a>
+					{/if}
+				</div>
+				<!--分类导航结束-->
+				<!--品牌特卖开始-->
+				<a href="{:url('Index/brand')}">
+				<div class="brand-box1">
+					<span class="brand-text1">品牌特卖</span>
+					<span class="brand-img1"></span>
+				</div>
+				</a>
+				<div class="special-sale-box1">
+					<p class="p1">
+						{volist name="brand" id="brand_item" key="brand_index"}
+							<a href="{:url('Index/brandlist',['id'=>$brand_item.brand_id])}" class="hengxiang">
+								<span class="special-sale-box2" style="display: block"><img src="__UPLOADS__/{$brand_item.image}" alt=""></span>
+							</a>
+						{/volist}
+					</p>
+				</div>
+				<!--品牌特卖结束-->
+				<!--爆款商品开始-->
+				<a href="{:url('Goods/goods_list',array('cate_id'=>3))}">
+				<div class="brand-box1">
+					<span class="brand-text1">爆款商品</span>
+					<span class="brand-img1"></span>
+				</div>
+				</a>
+				<div class="special-sale-banner">
+					<img src="{$pic['popular_shop']}" alt="" style="height: 105px">
+				</div>
+				<div class="special-sale-box3">
+					{volist name="popular" id="popular_item" key="popular_index"}
+						<a href="{:url('Goods/details',['id'=>$popular_item.goods_id])}">
+							<div class="special-sale-box4">
+								<span class="special-sale-img1"><img src="__UPLOADS__/{$popular_item.image}" alt=""></span>
+								<span class="special-sale-tbox">{$popular_item.name}</span>
+								<!-- <div class="special-sale-tbox2"><span class="special-sale-text1">买一赠一</span></div> -->
+								{if condition="$popular_item.price2 == ''"}
+									<span class="special-sale-text2">零售价：￥{$popular_item.retail_price}</span>
+									<span class="special-sale-text2">分销价：￥{$popular_item.price}</span>
+								{else /}
+									<span class="special-sale-text2">￥{$popular_item.price2} <i>￥{$popular_item.price}</i></span>
+								{/if}
+							</div>
+						</a>
+					{/volist}
+				</div>
+				<!--爆款商品结束-->
+				<!--最新产品开始-->
+				<a href="{:url('Goods/goods_list',array('cate_id'=>1))}">
+				<div class="brand-box1">
+					<span class="brand-text1">最新产品</span>
+					<span class="brand-img1"></span>
+				</div>
+				</a>
+				<div class="special-sale-banner">
+					<img src="{$pic['new_shop']}" alt="" style="height: 105px">
+				</div>
+				<div class="special-sale-box3">
+					{volist name="newlist" id="newlist_item" key="newlist_index"}
+						<a href="{:url('Goods/details',['id'=>$newlist_item.goods_id])}">
+							<div class="special-sale-box4">
+								<span class="special-sale-img1"><img src="__UPLOADS__/{$newlist_item.image}" alt=""></span>
+								<span class="special-sale-tbox">{$newlist_item.name}</span>
+								<!-- <div class="special-sale-tbox2"><span class="special-sale-text1">买一赠一</span></div> -->
+								{if condition="$newlist_item.price2 == ''"}
+									<span class="special-sale-text2">零售价：￥{$newlist_item.retail_price}</span>
+									<span class="special-sale-text2">分销价：￥{$newlist_item.price}</span>
+								{else /}
+									<span class="special-sale-text2">￥{$newlist_item.price2} <i>￥{$newlist_item.price}</i></span>
+								{/if}
+							</div>
+						</a>
+					{/volist}
+				</div>
+				<!--最新产品结束-->
+				<!--特色推荐开始-->
+				<a href="{:url('Goods/goods_list',array('cate_id'=>2))}">
+				<div class="brand-box1">
+					<span class="brand-text1">特色推荐</span>
+					<span class="brand-img1"></span>
+				</div>
+				</a>
+				<div class="special-sale-banner">
+					<img src="{$pic['guesslike_shop']}" alt="" style="height: 105px">
+				</div>
+				<div class="special-sale-box3">
+					{volist name="guesslike" id="guesslike_item" key="guesslike_index"}
+						<a href="{:url('Goods/details',['id'=>$guesslike_item.goods_id])}">
+							<div class="special-sale-box4">
+								<span class="special-sale-img1"><img src="__UPLOADS__/{$guesslike_item.image}" alt=""></span>
+								<span class="special-sale-tbox">{$guesslike_item.name}</span>
+								<!-- <div class="special-sale-tbox2"><span class="special-sale-text1">买一赠一</span></div> -->
+								{if condition="$guesslike_item.price2 == ''"}
+									<span class="special-sale-text2">零售价：￥{$guesslike_item.retail_price}</span>
+									<span class="special-sale-text2">分销价：￥{$guesslike_item.price}</span>
+								{else /}
+									<span class="special-sale-text2">￥{$guesslike_item.price2} <i>￥{$guesslike_item.price}</i></span>
+								{/if}
+							</div>
+						</a>
+					{/volist}
+				</div>
+				<!--特色推荐结束-->
+				<!-- 代理商广告开始 -->
+				<div class="brand-box1">
+					<a href="{:url('index/advertising')}">
+						<span class="brand-text1">联盟商家优惠活动</span>
+						<span class="brand-img1"></span>
+					</a>
+				</div>
+				<div class="bigboxcent">
+					{volist name="ggao" id="vo"}
+					<a href="{:url('Index/advertising_content',array('id'=>$vo['id']))}" class="news-center-box1">
+						<span class="news-center-img"><img src="/public/{$vo['img']}"></span>
+						<div class="news-center-box2">
+							<div class="float-100">
+								<span class="news-center-text1">{$vo['title']}</span>
+								<span class="news-center-text2">{$vo['time']|date="m-d H:i:s",###}</span>
+							</div>
+							<div class="float-100">
+								<span class="news-center-text3"><img src="__PUBLIC__/picture/scan.png" alt="">{$vo['address']}</span>
+							</div>
+						</div>
+					</a>
+				   	{/volist}
+				</div>
+				<!-- 代理商广告结束 -->
+			</div>
+			<!--bigbox结束-->
+
+			{include file="public/foot"/}
+		</div>
+		<script>
+			TouchSlide({
+				slideCell: "#slideBox",
+				titCell: ".hd ul", //开启自动分页 autoPage:true ，此时设置 titCell 为导航元素包裹层
+				mainCell: ".bd ul",
+				effect: "leftLoop",
+				autoPage: true, //自动分页
+				autoPlay: true, //自动播放
+			});
+		</script>
+	</body>
+</html>

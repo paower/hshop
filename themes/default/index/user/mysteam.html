@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="apple-touch-fullscreen" content="yes">
+	<meta name="apple-mobile-web-app-capable" content="yes">
+	<meta name="apple-mobile-web-app-status-bar-style" content="black">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+	<meta name="format-detection" content="telephone=no">
+	<meta name="author" content="AUI, a-ui.com">
+	<title>我的分销商</title>
+	<link rel="stylesheet" type="text/css" href="__PUBLIC__/css/Invitation.css">
+	<script type="text/javascript" src="__PUBLIC__/js/jquery-1.8.3.min.js"></script>
+	
+</head>
+<body style="background: #f33345">
+<header class="ui-header ui-header-positive ui-border-b">
+	<i class="ui-icon-return" onclick="history.back()"></i>
+	<h1>我的分销商</h1>
+</header>
+<div class="in-body" style="background:#f33345">
+	<div id="in-self" class="in-self" style="height: 50px"></div>
+
+	<section id="content">
+		<div class="in-content">
+			<div class="in-content-line"></div>
+			<div class="in-content-box">
+				<div class="in-content-title">
+					<h2>- 分销商列表 -</h2>
+					<div class="in-line-left">
+						<img src="__PUBLIC__/picture/icon-line.png" alt="">
+					</div>
+					<div class="in-line-right">
+						<img src="__PUBLIC__/picture/icon-line.png" alt="">
+					</div>
+				</div>
+				{if condition="$user['vip_grade'] gt 2"}
+				<div class="in-content-links">
+					<a href="javascript:">
+						分销商总人数
+						<div class="in-content-bd"></div>
+						<div class="in-content-ft">
+							<p>
+								<em>{$vip_two}</em>
+								人
+							</p>
+						</div>
+					</a>
+					<div class="in-line-left in-content-left" style="top:32px">
+						<img src="__PUBLIC__/picture/icon-line.png" alt="">
+					</div>
+					<div class="in-line-right in-content-right" style="top:32px">
+						<img src="__PUBLIC__/picture/icon-line.png" alt="">
+					</div>
+				</div>
+				{/if}
+				<div class="in-content-links">
+					<a href="javascript:">
+						<div class="in-content-hd">
+							{if condition="$user.user_photo == ''"}
+								<img src="__PUBLIC__/images/usericon.png" alt="">
+							{else /}
+								<img src="__UPLOADS__/{$user.user_photo}" alt="">
+							{/if}
+						</div>
+						<div class="in-content-bd">
+							<p>{$user.user_name}</p>
+						</div>
+						<div class="in-content-ft">
+							<p>
+								已邀请 <em>{$user.invitation_num}</em>
+								人
+							</p>
+						</div>
+					</a>
+					<div class="in-line-left in-content-left">
+						<img src="__PUBLIC__/picture/icon-line.png" alt="">
+					</div>
+					<div class="in-line-right in-content-right">
+						<img src="__PUBLIC__/picture/icon-line.png" alt="">
+					</div>
+				</div>
+				<div class="in-content-fellow">
+					{volist name="user.invitation_user" id="item" key="index"}
+						{if condition="$item.level<=1"}
+						<div class="in-fellow-well">
+							<div class="in-content-hd ">
+								{if condition="$item.user_photo == ''"}
+									<img src="__PUBLIC__/images/usericon.png" alt="">
+								{else /}
+									<img src="__UPLOADS__/{$item.user_photo}" alt="">
+								{/if}
+								<div class="in-red-crown"></div>
+							</div>
+							<div class="in-content-bd red">
+								<p>{$item.user_phone}
+									{if condition="$item.vip_grade==1"}
+									(体验用户)
+									{elseif condition="$item.vip_grade==2"/}
+									(分销商)
+									{elseif condition="$item.vip_grade==3"/}
+									(区代理)
+									{elseif condition="$item.vip_grade==4"/}
+									(合伙股东)
+									{/if}
+								</p>
+							</div>
+						</div>
+						{/if}
+					{/volist}
+				</div>
+				<div style="height:20px;"></div>
+			</div>
+		</div>
+	</section>
+	<!-- content end -->
+</div>
+
+<script src="__PUBLIC__/js/clipboard.js/dist/clipboard.min.js"></script>
+<script src="__PUBLIC__/js/layer/layer.js"></script>
+<script type="text/javascript">
+
+
+    function closeCeng() {
+        document.getElementById('ceng').style.display = 'none';
+        document.getElementById('close').style.display = 'none';
+        return false;
+
+    }
+</script>
+</body>
+</html>

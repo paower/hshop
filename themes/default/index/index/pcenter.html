@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8"/>
+<meta name="viewport" id="viewport" content="width=device-width,initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+<meta name="format-detection" content="telephone=no"/>
+<link href="__PUBLIC__/css/reset.css" rel="stylesheet" type="text/css">
+<link href="__PUBLIC__/css/personal-center.css" rel="stylesheet" type="text/css">
+<script type="text/javascript" src="__PUBLIC__/js/jquery-1.8.3.min.js"></script>
+<script src="__PUBLIC__/js/layer/layer.js"></script>
+<script src="__PUBLIC__/js/iscroll-zoom.js"></script>
+<script src="__PUBLIC__/js/hammer.js"></script>
+<script src="__PUBLIC__/js/jquery.photoClip.js"></script>
+</head>
+<body>
+<div class="near-box">
+      <div class="index-bigbox" style="margin-top: 0px;">
+          <!--头部中间开始-->
+          <div class="personal-top">
+          	 <!--头部开始-->
+			  <div class="personal-index-top">
+				 <a href="{:url('user/setting')}" class="personal-top-right">
+					<img src="__PUBLIC__/images/setup.png" alt="">
+					<span style="height: 25px;position: absolute;top: 40px;right: 10px; color:#fff;    font-size: 14px;">设置中心</span>
+				 </a>
+			  </div>
+			  <!--头部结束-->
+          	 <div class="personal-top-box1" {if condition="$user_name =='未登录'"}id="tologin"{/if}>
+          	 	<span class="personal-top-img1"><a href="#" title="修改头像" {if condition="$user_name !='未登录'"} id="logox"{/if}><img src="{$user_photo}" alt=""></a></span>
+          	 	<div class="personal-top-box2">
+          	 		<span class="personal-top-text1">{$user_name!='' ?$user_name:$user_phone}</span>
+					<span class="personal-top-text2">({if condition="$vip_grade eq 1"}体验用户{elseif condition="$vip_grade eq 2"/}分销商{elseif condition="$vip_grade eq 3"/}区代理{elseif condition="$vip_grade eq 4"/}合伙股东{else/}请先登录{/if})</span>
+          	 	</div>
+          	 </div>
+          </div>
+          <!--头部中间结束-->
+          <!--代付款分类开始-->
+          <div class="personal-box1 mbt-05">
+          	   <a href="{:url('order/orderlist')}?type=1" class="personal-box2 box3">
+          	      <span class="personal-box1-img1"><img src="__PUBLIC__/picture/personal-center-img1.png" alt=""></span>
+          	      <span class="personal-box1-text1">待付款</span>
+          	   </a>
+          	   <a href="{:url('order/orderlist')}?type=2" class="personal-box2 box3">
+          	      <span class="personal-box1-img1"><img src="__PUBLIC__/picture/personal-center-img2.png" alt=""></span>
+          	      <span class="personal-box1-text1">待发货</span>
+          	   </a>
+          	   <a href="{:url('order/orderlist')}?type=3" class="personal-box2 box3">
+          	      <span class="personal-box1-img1"><img src="__PUBLIC__/picture/personal-center-img3.png" alt=""></span>
+          	      <span class="personal-box1-text1">待收货</span>
+          	   </a>
+          	   <a href="{:url('order/orderlist')}?type=4" class="personal-box2 box3">
+          	      <span class="personal-box1-img1"><img src="__PUBLIC__/picture/personal-center-img4.png" alt=""></span>
+          	      <span class="personal-box1-text1">待评价</span>
+          	   </a>
+          	   <a href="{:url('order/orderlist')}?type=0" class="personal-box2 box3">
+          	      <span class="personal-box1-img1"><img src="__PUBLIC__/picture/personal-center-img5.png" alt=""></span>
+          	      <span class="personal-box1-text1">全部订单</span>
+          	   </a>
+          </div>
+          <!--代付款分类结束-->
+          <!--功能分类开始-->
+		  <a href="{:url('user/wallet')}" class="personal-box5">
+          	  <span class="personal-box5-img1"><img src="__PUBLIC__/images/balance.png" alt=""></span>
+          	  <span>我的账户</span>
+		  </a>
+		  {if condition="$user_name != '未登录'"}
+		  <a href="{:url('Login/register_2',array('id'=>$user_id))}" class="personal-box5">
+				<span class="personal-box5-img1"><img src="__PUBLIC__/images/balance.png" alt=""></span>
+				<span>用户注册</span>
+		  </a>
+		  {/if}
+		  <a href="{:url('user/invitation')}" class="personal-box5">
+          	  <span class="personal-box5-img1"><img src="__PUBLIC__/picture/Invitation.png" alt=""></span>
+          	  <span>邀请海报</span>
+		  </a>
+		
+		  {if condition="$vip_grade eq 3 or $vip_grade eq 4"}
+		  <a href="{:url('user/upgrade')}" class="personal-box5">
+          	  <span class="personal-box5-img1"><img src="__PUBLIC__/picture/upgrade.png" alt=""></span>
+          	  <span>升级分销商</span>
+		  </a>
+		  <a href="{:url('user/faadvertising')}" class="personal-box5">
+          	  <span class="personal-box5-img1"><img src="__PUBLIC__/picture/advertisement.png" alt=""></span>
+          	  <span>我要发布广告</span>
+		  </a>
+		  {/if}
+          <a href="{:url('user/mysteam')}" class="personal-box5">
+          	  <span class="personal-box5-img1"><img src="__PUBLIC__/picture/distributor.png" alt=""></span>
+          	  <span>我的分销商</span>
+          </a>
+          <a href="{:url('user/address')}" class="personal-box5">
+          	  <span class="personal-box5-img1"><img src="__PUBLIC__/picture/personal-center-img11.png" alt=""></span>
+          	  <span>收货地址</span>
+          </a>
+          <a href="{:url('user/service')}" class="personal-box5">
+          	  <span class="personal-box5-img1"><img src="__PUBLIC__/picture/personal-center-img12.png" alt=""></span>
+          	  <span>售后服务</span>
+		  </a>
+		  <a href="{:url('user/notice')}" class="personal-box5">
+			<span class="personal-box5-img1"><img src="__PUBLIC__/images/gonga.png" alt=""></span>
+			<span>系统公告</span>
+	  </a>
+	  {if condition="$user_name != '未登录'"}
+		  <a href="javascript:;" onclick="out()" class="personal-box5-text2">退出登录</a>
+	  {/if}
+      </div>
+      <!--bigbox结束-->
+	  {include file="public/foot"/}
+	 
+	<article class="htmleaf-container">
+		<div id="clipArea">
+			<div class="cancel">
+				<img src="__PUBLIC__/picture/quxiao.png"/>
+			</div>
+		</div>
+		<div class="foot-use">
+			<div class="uploader1 blue">
+				<input type="button" name="file" class="button" value="打开"/>
+				<form id='myupload' action="{:url('Index/Imgup')}" method='post' enctype='multipart/form-data'>
+					<input id="file" type="file"  name="uploadfile" accept="image/*" multiple  />
+				</form>
+			</div>
+			<button id="clipBtn">截取</button>
+		</div>
+		<div id="view"></div>
+	</article>
+</div>
+</body>
+<script>
+	function out(){
+		layer.msg('确定退出吗？', {
+		  	time: 0 ,
+		  	btn: ['确定', '取消'],
+		  	yes: function(index){
+		    	layer.close(index);
+		    	location.href="{:url('login/logout')}";
+		  	}
+		});
+	}
+	
+	var obUrl = ''
+	//document.addEventListener('touchmove', function (e) { e.preventDefault(); }, false);
+	$("#clipArea").photoClip({
+		width: 320,
+		height: 320,
+		file: "#file",
+		view: "#view",
+		ok: "#clipBtn",
+		loadStart: function() {
+			console.log("照片讀取中");
+		},
+		loadComplete: function() {
+			console.log("照片讀取完成");
+		},
+		clipFinish: function(dataURL) {
+			// console.log(dataURL);
+		}
+	});
+
+
+	$(function(){
+		$("#logox").click(function(){
+			$(".htmleaf-container").show();
+		})
+		$('.cancel').click(function(){
+			$(".htmleaf-container").hide();
+		})
+		$("#clipBtn").click(function(){
+			//數據流上傳開始執行圖片上傳
+			$.ajax({
+				url:"{:url('Index/imgUps')}",
+				type:'post',
+				data:{'dataflow':imgsource},
+				datatype:'json',
+				success:function (data) {
+					if(data.type == 1){
+						$("#logox").empty();
+						$('#logox').append('<img src="' + imgsource + '" align="absmiddle" style=" width:70px;height: 70px;">');
+						$(".htmleaf-container").hide();
+						layer.msg(data.text);
+					}else{
+						layer.msg(data.text);
+					}
+				}
+			})
+		})
+	});
+	{if condition="$user_name =='未登录'"}
+		$('#tologin').click(function(){
+			window.location.href='/index/Login/login';
+		})
+	{/if}
+</script>
+
+</html>

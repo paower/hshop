@@ -1,0 +1,129 @@
+{extend name="./shop/admin/view/public/base.html" /}
+{block name="content"}
+<div class="page-header">
+		<h1>
+			{$breadcrumb2}
+			<small>
+				<i class="ace-icon fa fa-angle-double-right"></i>
+			
+			</small>
+		</h1>
+</div>	
+	
+	<div class="tab-content">		
+		<input class="USER" name="id" type="hidden" value="{$info.id}" />		
+		<div class="tab-pane active" id="tab-member">
+			<table class="table table-binfoed">
+				<tr>
+				    <td>ID</td>
+				    <td>{$info.id}</td>
+				</tr>
+				<tr>
+				    <td>UID</td>
+				    <td>{$info.uid}</td>
+				</tr>
+				<tr>
+					<td>标题</td>
+					<td>
+						{$info['title']}
+					</td>
+				</tr>
+				<tr>
+				    <td>内容</td>
+				    <td>
+						{$info['content']}
+					</td>
+				</tr> 
+				<tr>
+					<td>缩略图</td>
+					<td>
+						<img src="/public/{$info['img']}"" alt="" style="width: 50px;height: 50px;">
+					</td>
+				</tr>
+				
+				<tr>
+					<td>地址</td>
+					<td>
+						{$info['address']}
+					</td>
+				</tr>
+				<tr>
+					<td>提交时间</td>
+					<td>
+						{$info['time']|date="Y-m-d H:i:s",###}
+					</td>
+				</tr>	
+				<tr>
+	                <td>状态</td>
+	                <td>
+						{if condition="$info.status eq 0"}未处理
+						{elseif condition="$info.status eq 1"/}通过
+						{elseif condition="$info.status eq 2"/}未通过
+						{/if}
+	            	</td>
+          		</tr>
+				<tr>
+					<td>结束时间</td>
+					<td>
+						<input type="text" id="test1" name="end_time">
+					</td>
+				</tr>
+				<tr>
+					<td>操作</td>
+					<td>	
+						<label class="radio-inline">
+							<input class="USER" type="radio" {if condition="$info.status == 1"}checked{/if} value="1" name="status">通过
+						</label>
+						<label class="radio-inline">
+							<input class="USER" type="radio" {if condition="$info.status == 2"}checked{/if}  value="2" name="status">不通过
+						</label>
+					</td>
+				</tr>
+				<tr>
+					<td>不通过原因</td>
+					<td>
+						<textarea name="reason" id="input-meta-description2" class="form-control" rows="5" id="reason">{$info.reason}</textarea>
+					</td>
+				</tr>
+			</table>
+			<div class="form-group">
+				<div style="margin-left:20px;">
+					<input name="send" type="button" value="提交" class="btn btn-primary" id="btn" />
+				</div>
+			</div>
+		</div>	
+	</div>
+	
+{/block}
+<!--<script type="text/javascript" src="__PUBLIC__/js/pick-pcc.min.1.0.1.js"></script>-->
+{block name="javascript"}
+<link rel="stylesheet" href="/public/static/layui/css/layui.css">
+<script src="/public/static/layui/layui.js"></script>
+<script>
+layui.use('laydate', function(){
+  var laydate = layui.laydate;
+  //常规用法
+  laydate.render({
+    elem: '#test1'
+  });
+});
+$('.btn').click(function(){
+	var id = $('input[name="id"]').val();
+	var end_time = $('input[name="end_time"]').val();
+	var status = $("input[name='status']:checked").val();
+	var text = $("textarea[name='reason']").val();
+	if(!status){
+        alert('请选择审核状态');
+        return;
+    }
+	$.post("{:url('Ggao/info')}",{id:id,end_time:end_time,status:status,reason:text},function(res){
+		if(res.status==1){
+			alert(res.text);
+			window.location.href=res.url
+		}else{
+			alert(res.text);
+		}
+	});
+})
+</script>
+{/block}
